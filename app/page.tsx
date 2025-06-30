@@ -5,24 +5,22 @@ import Image from "next/image";
 export default function Home() {
 	return (
 		<main className="relative flex min-h-screen w-full flex-col items-center">
+			<header className="w-full z-10 absolute flex items-center justify-between  px-5 right-0 left-0 top-5">
+				<div className="glass flex items-center justify-center  py-5 rounded-2xl w-52 h-14">
+					<Image
+						className="flex items-center justify-center"
+						src={"/logo.svg"}
+						alt="o-bainc logo"
+						width={170}
+						height={55}
+					/>
+				</div>
+
+				<div className="flex h-12 w-12 items-center justify-center rounded-lg border border-white/20 bg-white/10 p-2 backdrop-blur-sm">
+					<Menu className="h-6 w-6 text-white" />
+				</div>
+			</header>
 			<div className="w-full max-w-8xl">
-				{/* O header permanece inalterado, como solicitado */}
-				<header className="z-10 absolute flex items-center justify-between  px-5 right-0 left-0 top-5">
-					<div className="glass flex items-center justify-center  py-5 rounded-2xl w-52 h-14">
-						<Image
-							className="flex items-center justify-center"
-							src={"/logo.svg"}
-							alt="o-bainc logo"
-							width={170}
-							height={55}
-						/>
-					</div>
-
-					<div className="flex h-12 w-12 items-center justify-center rounded-lg border border-white/20 bg-white/10 p-2 backdrop-blur-sm">
-						<Menu className="h-6 w-6 text-white" />
-					</div>
-				</header>
-
 				{/* INÍCIO DA SOLUÇÃO */}
 				{/* 1. Este 'div' agora "embrulha" a seção. Ele cria o espaçamento. */}
 				<div className="m-2 ">
