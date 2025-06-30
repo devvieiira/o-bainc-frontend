@@ -204,6 +204,7 @@
 	--color-space-mid: #a7b3d1;
 	--color-space-light: #d1d8eb;
 	--color-glass-bg: #292a41;
+	--container-8xl: 87.5rem;
 	--background-image-button-green: linear-gradient(
 		340deg,
 		#0afbd9 0%,
