@@ -3,7 +3,8 @@
 
 @custom-variant dark (&:is(.dark *));
 
-html, body {
+html,
+body {
 	margin: 0;
 	padding: 0;
 	overflow-x: hidden;
@@ -207,7 +208,7 @@ html, body {
 @theme {
 	/* Custom colors */
 	--color-o-bainc-mid: #101569;
-	--color-o-bainc-light: #ECF8F7;
+	--color-o-bainc-light: #ecf8f7;
 	--color-space-dark: #080b36;
 	--color-space-mid: #a7b3d1;
 	--color-space-light: #d1d8eb;
@@ -226,14 +227,17 @@ html, body {
 		var(--color-space-mid) 70%,
 		var(--color-space-light) 100%
 	);
-	--background-o-bainc-gradient: linear-gradient(to bottom,
-				var(--color-space-dark) 0%,
-				/* O gradiente começa com a cor escura no topo */
-				var(--color-o-bainc-mid) 70%,
-				/* Atinge a cor média em 70% da altura, como solicitado */
-				var(--color-o-bainc-light) 100%
-				/* Termina com a cor clara na base (100%) */
-			);
+	--background-o-bainc-gradient: linear-gradient(
+		to bottom,
+		var(--color-space-dark) 0%,
+		/* O gradiente começa com a cor escura no topo */
+		var(--color-o-bainc-mid) 70%,
+		/* Atinge a cor média em 70% da altura, como solicitado */
+		var(--color-o-bainc-light) 100%
+		/* Termina com a cor clara na base (100%) */
+	);
+	--background-image-card-mo: url(../public/background-card-mobile.svg);
+	--background-image-card-desk: url(../public/background-card-desktop.svg);
 }
 
 @utility glass {
