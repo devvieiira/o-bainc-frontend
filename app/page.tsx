@@ -15,7 +15,7 @@ export default function Home() {
 						height={55}
 					/>
 				</div>
-				<div className="flex h-12 w-12 lg:w-fit items-center justify-center rounded-lg border-white/20 bg-white/10 p-2 glass">
+				<div className="flex h-12 w-12 lg:w-fit items-center justify-center rounded-2xl border-white/20 bg-white/10 p-2 glass">
 					<ul className="flex h-full w-full items-center justify-center gap-x-8 font-bold px-4">
 						<li className="hidden lg:block">
 							<a href="#" className="transition-colors hover:text-white/70">
@@ -51,7 +51,7 @@ export default function Home() {
 			</header>
 
 			<div className="w-full m-4 px-4">
-				<section className="relative w-full h-[95vh] flex flex-col items-center justify-between text-center bg-card-mo md:bg-card-desk rounded-4xl ">
+				<section className="relative w-full h-[95vh] flex flex-col items-center justify-between text-center rounded-4xl bg-gradient-to-br from-[#080B36] via-[#101569B2] to-[#ECF8F7]">
 					<div className="md:hidden w-full h-auto">
 						<Image
 							src={"/header-mobile.png"}
