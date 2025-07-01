@@ -15,52 +15,74 @@ export default function Home() {
 						height={55}
 					/>
 				</div>
-				<div className="flex h-12 w-12 lg:w-96 items-center justify-center rounded-lg lg border-white/20 bg-white/10 p-2 backdrop-blur-sm">
-					<Menu className="lg:hidden h-6 w-6 text-white" />
+				<div className="flex h-12 w-12 lg:w-fit items-center justify-center rounded-lg border-white/20 bg-white/10 p-2 glass">
+					<ul className="flex h-full w-full items-center justify-center gap-x-8 font-bold px-4">
+						<li className="hidden lg:block">
+							<a href="#" className="transition-colors hover:text-white/70">
+								Soluções
+							</a>
+						</li>
+						<li className="hidden lg:block">
+							<a href="#" className="transition-colors hover:text-white/70">
+								Produtos
+							</a>
+						</li>
+						<li className="hidden lg:block">
+							<a href="#" className="transition-colors hover:text-white/70">
+								Corporativo
+							</a>
+						</li>
+						<li className="hidden lg:block">
+							<a href="#" className="transition-colors hover:text-white/70">
+								Sobre
+							</a>
+						</li>
+						<li className="hidden lg:block">
+							<a href="#" className="transition-colors hover:text-white/70">
+								Contato
+							</a>
+						</li>
+
+						<li className="flex items-center justify-center text-center ">
+							<Menu className="h-6 w-6 text-white" />
+						</li>
+					</ul>
 				</div>
 			</header>
 
 			<div className="w-full m-4 px-4">
-				{/* Seção com imagem de fundo */}
 				<section className="relative w-full h-[95vh] flex flex-col items-center justify-between text-center bg-card-mo md:bg-card-desk rounded-4xl ">
-					{/* Imagem mobile */}
-					<div className="md:hidden absolute inset-0 z-0">
+					<div className="md:hidden w-full h-auto">
 						<Image
 							src={"/header-mobile.png"}
 							alt="Abstração gráfica de ondas de luz"
 							className="w-full h-auto"
-							width={425}
-							height={150}
+							width={1400}
+							height={839}
 						/>
 					</div>
 
-					{/* Imagem desktop */}
-					<div className="hidden md:block">
+					<div className="hidden md:flex w-full h-auto">
 						<Image
 							src={"/header-desktop.png"}
 							alt="Abstração gráfica de ondas de luz"
 							width={1920}
-							height={683}
+							height={900}
 							className="w-full h-auto"
 						/>
 					</div>
 
-					{/* Conteúdo em cima da imagem */}
 					<div className="relative z-10 px-4 py-16 space-y-6 text-white">
 						<h1 className="max-w-xs md:max-w-xl text-2xl font-semibold leading-tight md:text-3xl">
 							Quebrando Barreiras com Inteligência: O Futuro do Crédito Começa
 							Aqui
 						</h1>
-						<Button
-							variant={"default"}
-							className="px-8 py-3 h-fit rounded-xl text-md"
-						>
+						<Button className="px-8 py-3 h-fit rounded-xl text-md">
 							Conheça nossas soluções
 						</Button>
 					</div>
 				</section>
 
-				{/* Seção descritiva */}
 				<section className="flex mt-5 items-end justify-end w-full md:border-y md:border-y-border">
 					<p className="text-justify md:ml-4 md:mr-4 max-w-md py-6 px-2">
 						A O-Bainc® combina inteligência artificial, identidade digital e
