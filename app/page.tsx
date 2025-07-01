@@ -51,7 +51,7 @@ export default function Home() {
 			</header>
 
 			<div className="w-full m-4 px-4">
-				<section className="relative w-full h-[95vh] flex flex-col items-center justify-between text-center rounded-4xl bg-gradient-to-br from-[#080B36] via-[#101569B2] to-[#ECF8F7]">
+				<section className="relative overflow-hidden w-full h-[70vh] lg:h-[95vh] flex flex-col items-center justify-between text-center rounded-4xl rounded-t-4xl lg:rounded-4xl bg-white bg-[linear-gradient(305deg,_#ECF8F7_0%,_rgba(16,21,105,0.7)_50%,_rgba(8,11,54,1)_100%)]">
 					<div className="md:hidden w-full h-auto">
 						<Image
 							src={"/header-mobile.png"}
