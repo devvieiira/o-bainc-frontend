@@ -5,7 +5,7 @@ import Image from "next/image";
 export default function Home() {
 	return (
 		<main className="relative flex min-h-screen w-full flex-col items-center">
-			<header className="w-full z-10 absolute flex items-center justify-between  px-5 right-0 left-0 top-5">
+			<header className="w-full z-10 fixed flex items-center justify-between  px-5 right-0 left-0 top-5">
 				<div className="glass flex items-center justify-center  py-5 rounded-2xl w-52 h-14">
 					<Image
 						className="flex items-center justify-center"
@@ -16,18 +16,18 @@ export default function Home() {
 					/>
 				</div>
 
-				<div className="flex h-12 w-12 items-center justify-center rounded-lg border border-white/20 bg-white/10 p-2 backdrop-blur-sm">
-					<Menu className="h-6 w-6 text-white" />
+				<div className="flex h-12 w-12 lg:w-96 items-center justify-center rounded-lg lg border-white/20 bg-white/10 p-2 backdrop-blur-sm">
+					<Menu className="lg:hidden h-6 w-6 text-white" />
 				</div>
 			</header>
-			<div className="w-full max-w-8xl">
+			<div className="w-full m-4">
 				{/* INÍCIO DA SOLUÇÃO */}
 				{/* 1. Este 'div' agora "embrulha" a seção. Ele cria o espaçamento. */}
-				<div className="m-2 ">
+				<div className="">
 					{" "}
 					{/* Espaçamento do topo e lateral */}
 					{/* 2. A seção agora tem bordas arredondadas e 'overflow-hidden' para cortar as imagens internas */}
-					<section className="w-full flex flex-grow flex-col items-center justify-center text-center bg-[url(../public/backgorund-card-desktop.svg)]  rounded-2xl overflow-hidden relative">
+					<section className="w-full h-[95vh] flex flex-grow flex-col items-center justify-center text-center bg-red-500  rounded-2xl overflow-hidden relative">
 						<Image
 							src={"/header-mobile.png"}
 							alt="Abstração gráfica de ondas de luz"
@@ -66,6 +66,7 @@ export default function Home() {
 						crédito em mercados invisíveis, com segurança, inclusão e ética.
 					</p>
 				</section>
+				
 				{/* FIM DA SOLUÇÃO */}
 			</div>
 		</main>
