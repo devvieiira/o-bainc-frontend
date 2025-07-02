@@ -73,6 +73,7 @@ body {
 	--shadow-opacity: var(--shadow-opacity);
 	--color-shadow-color: var(--shadow-color);
 	--color-destructive-foreground: var(--destructive-foreground);
+	--banner: var(--hero)
 }
 
 :root {
@@ -220,6 +221,11 @@ body {
 		#0bc9ab 60%,
 		#0b977e 100%
 	);
+
+	--hero-gradient: linear-gradient(305deg,
+				#ECF8F7 0%,
+				rgba(16, 21, 105, 0.7) 50%,
+				rgba(8, 11, 54, 1) 100%);
 	--background-image-bottom-gradient: linear-gradient(
 		to bottom,
 		var(--color-space-dark) 0%,
@@ -227,6 +233,12 @@ body {
 		var(--color-space-mid) 70%,
 		var(--color-space-light) 100%
 	);
+
+	--bg-gradiente-hero: linear-gradient(305deg,
+		#ECF8F7 0%,
+		rgba(16, 21, 105, 0.7) 50%,
+		rgba(8, 11, 54, 1) 100%
+		);
 	--background-o-bainc-gradient: linear-gradient(
 		to bottom,
 		var(--color-space-dark) 0%,
@@ -306,3 +318,5 @@ body {
 .btn-solid-hover:hover::before {
 	opacity: 0;
 }
+
+
