@@ -73,7 +73,7 @@ body {
 	--shadow-opacity: var(--shadow-opacity);
 	--color-shadow-color: var(--shadow-color);
 	--color-destructive-foreground: var(--destructive-foreground);
-	--banner: var(--hero)
+	--banner: var(--hero);
 }
 
 :root {
@@ -222,10 +222,12 @@ body {
 		#0b977e 100%
 	);
 
-	--hero-gradient: linear-gradient(305deg,
-				#ECF8F7 0%,
-				rgba(16, 21, 105, 0.7) 50%,
-				rgba(8, 11, 54, 1) 100%);
+	--hero-gradient: linear-gradient(
+		305deg,
+		#ecf8f7 0%,
+		rgba(16, 21, 105, 0.7) 50%,
+		rgba(8, 11, 54, 1) 100%
+	);
 	--background-image-bottom-gradient: linear-gradient(
 		to bottom,
 		var(--color-space-dark) 0%,
@@ -234,22 +236,28 @@ body {
 		var(--color-space-light) 100%
 	);
 
-	--bg-gradiente-hero: linear-gradient(305deg,
-		#ECF8F7 0%,
+	--bg-gradiente-hero: linear-gradient(
+		305deg,
+		#ecf8f7 0%,
 		rgba(16, 21, 105, 0.7) 50%,
 		rgba(8, 11, 54, 1) 100%
-		);
+	);
 	--background-o-bainc-gradient: linear-gradient(
 		to bottom,
 		var(--color-space-dark) 0%,
-		/* O gradiente começa com a cor escura no topo */
 		var(--color-o-bainc-mid) 70%,
-		/* Atinge a cor média em 70% da altura, como solicitado */
 		var(--color-o-bainc-light) 100%
-		/* Termina com a cor clara na base (100%) */
 	);
 	--background-image-card-mo: url(../public/background-card-mobile.svg);
 	--background-image-card-desk: url(../public/background-card-desktop.svg);
+
+	--background-image-light-to-dark: linear-gradient(
+		to bottom,
+		var(--color-space-light),
+		var(--color-space-mid),
+		var(--color-space-mid),
+		var(--color-space-dark)
+	);
 }
 
 @utility glass {
@@ -318,5 +326,3 @@ body {
 .btn-solid-hover:hover::before {
 	opacity: 0;
 }
-
-
