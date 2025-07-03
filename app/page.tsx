@@ -1,57 +1,91 @@
 import { Button } from "@/components/ui/button";
+import {
+	Popover,
+	PopoverContent,
+	PopoverTrigger,
+} from "@/components/ui/popover";
 import { Menu } from "lucide-react";
 import Image from "next/image";
 
 export default function Home() {
+	const navLinks = [
+		{ href: "#", text: "Soluções" },
+		{ href: "#", text: "Produtos" },
+		{ href: "#", text: "Corporativo" },
+		{ href: "#", text: "Sobre" },
+		{ href: "#", text: "Contato" },
+	];
 	return (
 		<main className="flex min-h-screen w-full flex-col items-center ">
-			<header className="w-full z-10 fixed flex items-center justify-between px-5 right-0 left-0 top-5">
-				<div className="glass flex items-center justify-center py-5 rounded-2xl w-52 h-14">
+			<header className="w-full z-10 fixed flex items-center justify-between p-10 right-0 left-0 top-0">
+				<div className="glass flex items-center justify-center py-2 rounded-2xl w-56 h-14">
 					<Image
-						className="flex items-center justify-center"
+						className="w-full h-auto p-4"
 						src={"/logo.svg"}
 						alt="o-bainc logo"
 						width={170}
 						height={55}
 					/>
 				</div>
-				<div className="flex h-12 w-12 lg:w-fit items-center justify-center rounded-2xl border-white/20 bg-white/10 p-2 glass">
-					<ul className="flex h-full w-full items-center justify-center gap-x-8 font-bold px-4">
-						<li className="hidden lg:block">
-							<a href="#" className="transition-colors hover:text-white/70">
-								Soluções
-							</a>
-						</li>
-						<li className="hidden lg:block">
-							<a href="#" className="transition-colors hover:text-white/70">
-								Produtos
-							</a>
-						</li>
-						<li className="hidden lg:block">
-							<a href="#" className="transition-colors hover:text-white/70">
-								Corporativo
-							</a>
-						</li>
-						<li className="hidden lg:block">
-							<a href="#" className="transition-colors hover:text-white/70">
-								Sobre
-							</a>
-						</li>
-						<li className="hidden lg:block">
-							<a href="#" className="transition-colors hover:text-white/70">
-								Contato
-							</a>
-						</li>
-
-						<li className="flex items-center justify-center text-center ">
-							<Menu className="h-6 w-6 text-white" />
+				<div className="flex md:h-14 md:w-fit h-12 w-12 lg:w-fit items-center justify-center rounded-2xl border-white/20 bg-white/10 p-2 glass">
+					<ul className="flex h-full w-full items-center justify-center gap-x-2 font-bold px-4">
+						{navLinks.map((link) => (
+							<li
+								key={link.text}
+								className="hidden lg:block rounded-xl hover:text-black hover:bg-white  transition-all px-3 py-2"
+							>
+								<a href={link.href} className="">
+									{link.text}
+								</a>
+							</li>
+						))}
+						<li className="flex items-center justify-center text-center p-1 rounded-xl hover:text-black hover:bg-white  transition-all">
+							<Popover>
+								<PopoverTrigger asChild>
+									<Menu className="h-6 w-6" />
+								</PopoverTrigger>
+								<PopoverContent
+									align="end"
+									sideOffset={12}
+									alignOffset={-28}
+									className="w-fit "
+								>
+									<ul className="flex flex-col gap-2 p-2 text-center font-bold">
+										{navLinks.map((link) => (
+											<li
+												key={link.text}
+												className="py-2 md:hidden rounded-xl hover:text-black hover:bg-white transition-all"
+											>
+												<a href={link.href} className="w-full p-3 text-center">
+													{link.text}
+												</a>
+											</li>
+										))}
+										<li className="py-2 rounded-xl hover:text-black hover:bg-white transition-all">
+											<a href={"#"} className="w-full p-3 text-center">
+												outras opções
+											</a>
+										</li>
+										<li className="py-2 rounded-xl hover:text-black hover:bg-white transition-all">
+											<a href={"#"} className="w-full p-3 text-center">
+												outras opções
+											</a>
+										</li>
+										<li className="py-2 rounded-xl hover:text-black hover:bg-white transition-all">
+											<a href={"#"} className="w-full p-3 text-center">
+												outras opções
+											</a>
+										</li>
+									</ul>
+								</PopoverContent>
+							</Popover>
 						</li>
 					</ul>
 				</div>
 			</header>
 
 			<div className="w-full m-4 px-4">
-				<section className="relative overflow-hidden w-full h-[70vh] lg:h-[95vh] flex flex-col items-center justify-between text-center rounded-4xl rounded-t-4xl lg:rounded-4xl bg-white bg-[linear-gradient(305deg,_#ECF8F7_0%,_rgba(16,21,105,0.7)_50%,_rgba(8,11,54,1)_100%)]">
+				<section className="relative overflow-hidden w-full h-[70vh] lg:h-[95vh] flex flex-col items-center justify-start text-center rounded-4xl rounded-t-4xl lg:rounded-4xl bg-white bg-[linear-gradient(305deg,_#ECF8F7_0%,_rgba(16,21,105,0.7)_50%,_rgba(8,11,54,1)_100%)]">
 					<div className="md:hidden w-full h-auto">
 						<Image
 							src={"/header-mobile.png"}
@@ -72,7 +106,7 @@ export default function Home() {
 						/>
 					</div>
 
-					<div className="relative z-10 px-4 py-16 space-y-6 text-white">
+					<div className="absolute bottom-0  z-10 px-16 py-16 space-y-6 text-white">
 						<h1 className="max-w-xs md:max-w-xl text-2xl font-semibold leading-tight md:text-3xl">
 							Quebrando Barreiras com Inteligência: O Futuro do Crédito Começa
 							Aqui
@@ -83,12 +117,41 @@ export default function Home() {
 					</div>
 				</section>
 
-				<section className="flex mt-5 items-end justify-end w-full md:border-y md:border-y-border">
-					<p className="text-justify md:ml-4 md:mr-4 max-w-md py-6 px-2">
-						A O-Bainc® combina inteligência artificial, identidade digital e
-						avaliação de risco em tempo real para transformar o acesso ao
-						crédito em mercados invisíveis, com segurança, inclusão e ética.
-					</p>
+				<section className="flex xl:mt-5 px-3.5 py-10 xl:px-15 items-end justify-end w-full">
+					<div className="flex items-center justify-end w-full xl:mx-40">
+						<p className="text-justify ml-14 md:ml-2 md:mr-4 max-w-[630px] mb-3.5">
+							A O-Bainc® combina inteligência artificial, identidade digital e
+							avaliação de risco em tempo real para transformar o acesso ao
+							crédito em mercados invisíveis, com segurança, inclusão e ética.
+						</p>
+					</div>
+				</section>
+				<section>
+					<div className="pb-14 px-14">
+						<div className="mx-44 pt-14 flex justify-center pb-7">
+							<p className="text-[32px] text-white text-center max-w-[700px] font-semibold">Bilhões estão excluídos. Nós estamos mudando isso</p>
+						</div>
+					</div>
+				</section>
+				<section className="px-14 flex justify-center">
+					<div className="py-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+						<div className="space-y-2 md:mb-8 lg:mb-0 pr-10 pl-10 lg:pl-0 border-b md:border-b-0 border-[#7E86B0] pb-2">
+							<h2 className="text-6xl max-w-[281px] text-center">±4</h2>
+							<p className="max-w-[281px] text-center mb-3.5">bilhões de pessoas no mundo são invisíveis ao crédito</p>
+						</div>
+						<div className="space-y-2 md:mb-8 lg:mb-0 md:border-l md:border-[#7E86B0] pl-10 pr-10 border-b md:border-b-0 border-[#7E86B0] pb-2 pt-4 md:pt-0 md:pb-0">
+							<h2 className="text-6xl max-w-[281px] text-center">+65</h2>
+							<p className="max-w-[281px] text-center mb-3.5">milhões de brasileiros invísiveis ao crédito</p>
+						</div>
+						<div className="space-y-2 lg:border-l md:mt-6 lg:mt-0 lg:border-[#7E86B0] pl-10 pr-10 border-b md:border-b-0 border-[#7E86B0] pb-2 pt-4 md:pt-0 md:pb-0">
+							<h2 className="text-6xl max-w-[281px] text-center">+300</h2>
+							<p className="max-w-[281px] text-center mb-3.5">milhões de latino-americanos carentes de serviço financeiros</p>
+						</div>
+						<div className="space-y-2 md:border-l md:mt-6 lg:mt-0 md:border-[#7E86B0] pl-10 pt-4 md:pt-0">
+							<h2 className="text-6xl max-w-[281px] text-center">IA</h2>
+							<p className="max-w-[281px] text-center mb-3.5">que reduz inadimplência em até 30%</p>
+						</div>
+					</div>
 				</section>
 			</div>
 		</main>
