@@ -153,6 +153,74 @@ export default function Home() {
 						</div>
 					</div>
 				</section>
+				<div className="w-full md:pl-0 flex flex-col items-center justify-center">
+					<div className="flex justify-center pt-14">
+						<p className="text-[32px] mb-3.5">O que nos diferencia</p>
+					</div>
+					<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 pt-2">
+						<div className="max-w-[736px] mx-auto md:mx-0 md:max-w-[420px] min-h pb-9 md:pb-0 md:h-[498px] bg-[#21234A] rounded-4xl flex flex-col items-center px-5 pt-5">
+							<Image
+								src={"/ia.png"}
+								alt="Abstração gráfica de ondas de luz"
+								width={380}
+								height={285}
+								className="rounded-2xl mb-3.5 hidden md:flex"
+							/>
+							<Image
+								src={"/ia.png"}
+								alt="Abstração gráfica de ondas de luz"
+								width={696}
+								height={522}
+								className="rounded-2xl mb-3.5 md:hidden"
+							/>
+							<div className="pt-2">
+								<h3 className="pb-4 text-[20px] text-center">IA para o Bem</h3>
+								<p className="text-center">Usamos IA, ciência de dados e engenharia avançada para resolver problemas reais. Não apenas para ganhar eficiência, mas para gerar inclusão.</p>
+							</div>
+						</div>
+						<div className="max-w-[736px] mx-auto md:mx-0 md:max-w-[420px] min-h pb-9 md:pb-0 md:h-[498px] bg-[#21234A] rounded-4xl flex flex-col items-center px-5 pt-5">
+							<Image
+								src={"/commitment.png"}
+								alt="Abstração gráfica de ondas de luz"
+								width={380}
+								height={285}
+								className="rounded-2xl mb-3.5 hidden md:flex"
+							/>
+							<Image
+								src={"/commitment.png"}
+								alt="Abstração gráfica de ondas de luz"
+								width={696}
+								height={522}
+								className="rounded-2xl mb-3.5 md:hidden"
+							/>
+							<div className="pt-2">
+								<h3 className="pb-4 text-[20px] text-center">Compromisso com o humano</h3>
+								<p className="text-center">Cada linha de código que escrevemos é para ampliar oportunidades, empoderar indivíduos e fomentar ecossistemas financeiros mais justos.</p>
+							</div>
+						</div>
+						<div className="max-w-[736px] md:max-w-[420px] min-h pb-9 md:pb-0 md:h-[498px] bg-[#21234A] rounded-4xl flex flex-col items-center px-5 pt-5 md:col-span-2 mx-auto lg:col-span-1 lg:mx-0">
+							<Image
+								src={"/ia.png"}
+								alt="Abstração gráfica de ondas de luz"
+								width={380}
+								height={285}
+								className="rounded-2xl mb-3.5 hidden md:flex"
+							/>
+							<Image
+								src={"/ia.png"}
+								alt="Abstração gráfica de ondas de luz"
+								width={696}
+								height={522}
+								className="rounded-2xl mb-3.5 md:hidden"
+							/>
+							<div className="pt-2">
+								<h3 className="pb-4 text-[20px] text-center">Ética e soberania de dados</h3>
+								<p className="text-center">Nosso modelo garante que os tomadores mantenham controle total sobre suas informações pessoais. Transparência, segurança e respeito são inegociáveis.</p>
+							</div>
+						</div>
+						
+					</div>
+				</div>
 			</div>
 		</main>
 	);
