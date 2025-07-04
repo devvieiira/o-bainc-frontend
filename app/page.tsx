@@ -220,6 +220,42 @@ export default function Home() {
 						</div>
 						
 					</div>
+					<div className="pt-14 w-full">
+						<h2 className="text-[32px] pb-6 text-center">Conformidade total</h2>
+						<div className="grid md:grid-cols-3 space-y-5 md:space-y-0 md:space-x-5">
+							<div className="md:max-w-[420px] max-w-[737px] bg-[#21234A] flex items-center justify-start md:justify-center p-2 space-x-4 rounded-2xl">
+								<Image
+									src={"/icon.svg"}
+									alt="Ícone"
+									width={55}
+									height={55}
+									className="rounded-2xl"
+								/>
+								<p>LGPD - Lei Geral de Proteção de Dados Pessoais</p>
+							</div>
+							<div className="md:max-w-[420px] max-w-[737px] bg-[#21234A] flex items-center justify-start md:justify-center p-2 space-x-4 rounded-2xl">
+								<Image
+									src={"/icon.svg"}
+									alt="Ícone"
+									width={55}
+									height={55}
+									className="rounded-2xl"
+								/>
+								<p>GDPR - Regulamento Geral sobre a Proteção de Dados</p>
+							</div>
+							<div className="md:max-w-[420px] max-w-[737px] bg-[#21234A] flex items-center justify-start md:justify-center p-2 space-x-4 rounded-2xl">
+								<Image
+									src={"/icon.svg"}
+									alt="Ícone"
+									width={55}
+									height={55}
+									className="rounded-2xl"
+								/>
+								<p>AML - Combate à Lavagem de Dinheiro
+								</p>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</main>
