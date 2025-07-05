@@ -18,13 +18,13 @@ export default function Home() {
 	return (
 		<main className="flex min-h-screen w-full flex-col items-center ">
 			<header className="w-full z-10 fixed flex items-center justify-between p-10 right-0 left-0 top-0">
-				<div className="glass flex items-center justify-center py-2 rounded-2xl w-56 h-14">
+				<div className="glass flex items-center justify-center py-3.5 rounded-2xl max-w-[200px] px-7 h-14">
 					<Image
-						className="w-full h-auto p-4"
+						className=""
 						src={"/logo.svg"}
 						alt="o-bainc logo"
 						width={170}
-						height={55}
+						height={20}
 					/>
 				</div>
 				<div className="flex md:h-14 md:w-fit h-12 w-12 lg:w-fit items-center justify-center rounded-2xl border-white/20 bg-white/10 p-2 glass">
@@ -222,7 +222,7 @@ export default function Home() {
 					</div>
 					<div className="pt-14 w-full">
 						<h2 className="text-[32px] pb-6 text-center">Conformidade total</h2>
-						<div className="grid md:grid-cols-3 space-y-5 md:space-y-0 md:space-x-5">
+						<div className="grid md:grid-cols-3 space-y-5 md:space-x-5">
 							<div className="md:max-w-[420px] max-w-[737px] bg-[#21234A] flex items-center justify-start md:justify-center p-2 space-x-4 rounded-2xl">
 								<Image
 									src={"/icon.svg"}
@@ -243,7 +243,7 @@ export default function Home() {
 								/>
 								<p>GDPR - Regulamento Geral sobre a Proteção de Dados</p>
 							</div>
-							<div className="md:max-w-[420px] max-w-[737px] bg-[#21234A] flex items-center justify-start md:justify-center p-2 space-x-4 rounded-2xl">
+							<div className="md:max-w-[420px] max-w-[737px] bg-[#21234A] flex items-center  md:justify-center p-2 space-x-4 rounded-2xl">
 								<Image
 									src={"/icon.svg"}
 									alt="Ícone"
