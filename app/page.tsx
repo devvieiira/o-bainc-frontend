@@ -218,11 +218,11 @@ export default function Home() {
 								<p className="text-center">Nosso modelo garante que os tomadores mantenham controle total sobre suas informações pessoais. Transparência, segurança e respeito são inegociáveis.</p>
 							</div>
 						</div>
-						
+
 					</div>
-					<div className="pt-14 w-full">
+					<div className="pt-14 w-full flex flex-col items-center">
 						<h2 className="text-[32px] pb-6 text-center">Conformidade total</h2>
-						<div className="grid md:grid-cols-3 space-y-5 md:space-x-5">
+						<div className="grid md:grid-cols-3 space-y-5 md:space-y-0 md:space-x-5">
 							<div className="md:max-w-[420px] max-w-[737px] bg-[#21234A] flex items-center justify-start md:justify-center p-2 space-x-4 rounded-2xl">
 								<Image
 									src={"/icon.svg"}
@@ -243,7 +243,7 @@ export default function Home() {
 								/>
 								<p>GDPR - Regulamento Geral sobre a Proteção de Dados</p>
 							</div>
-							<div className="md:max-w-[420px] max-w-[737px] bg-[#21234A] flex items-center  md:justify-center p-2 space-x-4 rounded-2xl">
+							<div className="md:max-w-[420px] max-w-[737px] bg-[#21234A] flex items-center justify-start md:justify-center p-2 space-x-4 rounded-2xl">
 								<Image
 									src={"/icon.svg"}
 									alt="Ícone"
@@ -257,6 +257,88 @@ export default function Home() {
 						</div>
 					</div>
 				</div>
+				<section className="flex flex-col pt-44 items-center">
+					<div className="flex flex-col items-center">
+						<h2 className="text-[32px] mb-3.5">Tecnologia própria, impacto real</h2>
+						<div className="flex justify-center max-w-[686px] pt-2">
+							<p className="text-center mb-3.5">Nossa plataforma proprietária integra dados comportamentais, inteligência artificial e análise de risco em tempo real para expandir o acesso ao crédito de forma segura.Do CRIP-D® ao OBDC®, nossas soluções foram criadas para quebrar barreiras invisíveis que excluem bilhões de tomadores.</p>
+						</div>
+					</div>
+					<div className="pt-14 w-full flex flex-col items-center space-y-6">
+						<div className="max-w-[1050px] w-full p-1 gradient-border flex">
+							<Image 
+							src={"/crip-d.svg"}
+							alt="crip-d icon"
+							width={140}
+							height={140}
+							/>
+							<div className="flex flex-col items-start p-5">
+								<h3 className="text-[20px] mb-3.5">Identidade Digital Soberana</h3>
+								<p className="text-[16px] max-w-[665px] mb-3.5">A base da inclusão financeira real. CRIP-D® cria identidades digitais completas para tomadores que não possuem histórico formal. <span className="underline">Saber mais</span></p>
+							</div>
+						</div>
+						<div className="max-w-[1050px] w-full p-1 gradient-border flex">
+							<Image
+								src={"/adg.svg"}
+								alt="adg icon"
+								width={140}
+								height={140}
+							/>
+							<div className="flex flex-col items-start p-5">
+								<h3 className="text-[20px] mb-3.5">Mecanismo de Decisão de Crédito com IA</h3>
+								<p className="text-[16px] max-w-[665px] mb-3.5"> Avaliação de risco em tempo real, com precisão incomparável. ADG® transforma dados em decisões rápidas, seguras e justas. <span className="underline">Saber mais</span></p>
+							</div>
+						</div>
+						<div className="max-w-[1050px] w-full p-1 gradient-border flex">
+							<Image
+								src={"/imc.svg"}
+								alt="icm icon"
+								width={140}
+								height={140}
+							/>
+							<div className="flex flex-col items-start p-5">
+								<h3 className="text-[20px] mb-3.5">Plataforma Integrada de Gestão de Crédito</h3>
+								<p className="text-[16px] max-w-[665px] mb-3.5">Uma plataforma completa para integrar identidade, KYC, conformidade e decisões de crédito em um único lugar.  <span className="underline">Saber mais</span></p>
+							</div>
+						</div>
+						<div className="max-w-[1050px] w-full p-1 gradient-border flex">
+							<Image
+								src={"/orbitale.svg"}
+								alt="orbitale icon"
+								width={140}
+								height={140}
+							/>
+							<div className="flex flex-col items-start p-5">
+								<h3 className="text-[20px] mb-3.5">Análise de Risco de Portfólio e Inadimplência</h3>
+								<p className="text-[16px] max-w-[665px] mb-3.5">Plataforma de gestão de risco que antecipa inadimplência com até 75% mais precisão que modelos tradicionais. <span className="underline">Saber mais</span></p>
+							</div>
+						</div>
+						<div className="max-w-[1050px] w-full p-1 gradient-border flex">
+							<Image
+								src={"/verdaji.svg"}
+								alt="verdaji icon"
+								width={140}
+								height={140}
+							/>
+							<div className="flex flex-col items-start p-5">
+								<h3 className="text-[20px] mb-3.5">Identidade de Crédito Autogerida</h3>
+								<p className="text-[16px] max-w-[665px] mb-3.5">Aplicativo de identidade digital baseado em soberania de dados e criptografia quântica. Dá ao usuário total controle sobre seu perfil financeiro. <span className="underline">Saber mais</span></p>
+							</div>
+						</div>
+						<div className="max-w-[1050px] w-full p-1 gradient-border flex">
+							<Image
+								src={"/obdc.svg"}
+								alt="obdc icon"
+								width={140}
+								height={140}
+							/>
+							<div className="flex flex-col items-start p-5">
+								<h3 className="text-[20px] mb-3.5">Open Bank Digital Currency</h3>
+								<p className="text-[16px] max-w-[665px] mb-3.5">A moeda digital mais segura do mundo para crédito inclusivo. Lastreada em ativos múltiplos e protegida por segurança quântica. <span className="underline">Saber mais</span></p>
+							</div>
+						</div>
+					</div>
+				</section>
 			</div>
 		</main>
 	);
