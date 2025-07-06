@@ -5,5 +5,5 @@ export interface CardImageProps {
 }
 
 export function CardImage({ children }: CardImageProps) {
-	return <>{children}</>;
+	return <div className="w-full col-span-1">{children}</div>;
 }

@@ -5,5 +5,5 @@ export interface TitleProps {
 }
 
 export function Title({ children }: TitleProps) {
-	return <h2 className="text-xl mt-8">{children}</h2>;
+	return <h2 className="text-xl font-medium mt-8">{children}</h2>;
 }

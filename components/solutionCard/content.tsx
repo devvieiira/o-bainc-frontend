@@ -9,7 +9,7 @@ export type ContentProps = {
 };
 
 function CardContentRoot({ children }: ContentProps) {
-	return <div className="space-y-5">{children}</div>;
+	return <div className="lg:pl-10 space-y-5 col-span-2">{children}</div>;
 }
 
 export type CardContentComponent = FC<ContentProps> & {
