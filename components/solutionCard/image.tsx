@@ -1,9 +1,9 @@
-import { ReactNode } from "react";
+import { ReactNode } from 'react';
 
 export interface CardImageProps {
-	children: ReactNode;
+  children: ReactNode;
 }
 
 export function CardImage({ children }: CardImageProps) {
-	return <div className="w-full col-span-1">{children}</div>;
+  return <div className="col-span-1 w-full">{children}</div>;
 }

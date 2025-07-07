@@ -1,22 +1,20 @@
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import "./globals.css";
+import type { Metadata } from 'next';
+import { Inter } from 'next/font/google';
+import './globals.css';
 const inter = Inter({});
 export const metadata: Metadata = {
-	title: "O Bainc",
-	description: "O Futuro do crédito começa aqui",
+  title: 'O Bainc',
+  description: 'O Futuro do crédito começa aqui',
 };
 
 export default function RootLayout({
-	children,
+  children,
 }: Readonly<{
-	children: React.ReactNode;
+  children: React.ReactNode;
 }>) {
-	return (
-		<html lang="en">
-			<body className={`${inter.className}  antialiased h-full w-full  dark`}>
-				{children}
-			</body>
-		</html>
-	);
+  return (
+    <html lang="en">
+      <body className={`${inter.className} dark h-full w-full antialiased`}>{children}</body>
+    </html>
+  );
 }

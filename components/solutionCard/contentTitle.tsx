@@ -1,9 +1,9 @@
-import type { ReactNode } from "react";
+import type { ReactNode } from 'react';
 
 export interface TitleProps {
-	children: ReactNode;
+  children: ReactNode;
 }
 
 export function Title({ children }: TitleProps) {
-	return <h2 className="text-xl font-medium mt-8">{children}</h2>;
+  return <h2 className="mt-8 text-xl font-medium">{children}</h2>;
 }
