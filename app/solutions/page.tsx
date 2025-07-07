@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import SolutionCard from '@/components/solutionCard';
 
 const SolutionsPage = () => {
@@ -17,17 +16,9 @@ const SolutionsPage = () => {
           </span>
         </div>
       </section>
-      <section className="flex w-full flex-col items-center justify-center gap-y-5">
+      <section className="mb-[25rem] flex w-full flex-col items-center justify-center gap-y-5">
         <SolutionCard>
-          <SolutionCard.Image>
-            <Image
-              src={'/visual_identity.png'}
-              alt="Identidade visual Imagem"
-              height={460}
-              width={460}
-              className="h-auto w-full overflow-hidden rounded-3xl"
-            />
-          </SolutionCard.Image>
+          <SolutionCard.Image alt="identidade visual" image="/visual_identity.png" />
           <SolutionCard.Content>
             <SolutionCard.Content.Title>
               Identidade Digital Inteligente (CRIP-D®)
@@ -52,15 +43,7 @@ const SolutionsPage = () => {
           </SolutionCard.Content>
         </SolutionCard>
         <SolutionCard>
-          <SolutionCard.Image>
-            <Image
-              src={'/KYC_IA.png'}
-              alt="KCY conm IA"
-              width={460}
-              height={460}
-              className="h-auto w-full overflow-hidden rounded-3xl"
-            />
-          </SolutionCard.Image>
+          <SolutionCard.Image image="/KYC_IA.png" alt="KCY com IA" />
           <SolutionCard.Content>
             <SolutionCard.Content.Title>KYC com IA e Conformidade Total</SolutionCard.Content.Title>
             <SolutionCard.Content.Description>
@@ -83,15 +66,7 @@ const SolutionsPage = () => {
           </SolutionCard.Content>
         </SolutionCard>
         <SolutionCard>
-          <SolutionCard.Image>
-            <Image
-              src={'/risk_ai.png'}
-              alt="avaliacao de risco com AI"
-              width={460}
-              height={460}
-              className="h-auto w-full overflow-hidden rounded-3xl"
-            />
-          </SolutionCard.Image>
+          <SolutionCard.Image image="/risk_ai.png" alt="avaliacao de risco com IA" />
           <SolutionCard.Content>
             <SolutionCard.Content.Title>
               Avaliação de Risco com Inteligência Artificial
@@ -110,6 +85,57 @@ const SolutionsPage = () => {
               </SolutionCard.Content.Feature>
               <SolutionCard.Content.Feature icon="/algorithmIcon.svg">
                 Algoritmos auditáveis e justos
+              </SolutionCard.Content.Feature>
+            </SolutionCard.Content.Features>
+          </SolutionCard.Content>
+        </SolutionCard>
+        <SolutionCard>
+          <SolutionCard.Image
+            image="/automatic_credit.png"
+            alt="Originacao automatizada de credito"
+          />
+          <SolutionCard.Content>
+            <SolutionCard.Content.Title>
+              Originação Automatizada de Crédito
+            </SolutionCard.Content.Title>
+            <SolutionCard.Content.Description>
+              Nossa solução de originação automatiza desde o onboarding do tomador até a concessão
+              final, integrando dados do CRIP-D®, KYC e modelos de risco de forma fluida e segura.
+            </SolutionCard.Content.Description>
+            <SolutionCard.Content.Features>
+              <SolutionCard.Content.Feature icon="/temp_cost.svg">
+                {' '}
+                Redução de tempo e custo na concessão
+              </SolutionCard.Content.Feature>
+              <SolutionCard.Content.Feature icon="/approve.svg">
+                Menos burocracia, mais aprovações
+              </SolutionCard.Content.Feature>
+              <SolutionCard.Content.Feature icon="/API_integrate.svg">
+                Integração via API com sua operação atual
+              </SolutionCard.Content.Feature>
+            </SolutionCard.Content.Features>
+          </SolutionCard.Content>
+        </SolutionCard>
+        <SolutionCard>
+          <SolutionCard.Image alt="tempo real imagem" image="/realtime.png" />
+          <SolutionCard.Content>
+            <SolutionCard.Content.Title>
+              Monitoramento de Crédito e Conformidade em Tempo Real
+            </SolutionCard.Content.Title>
+            <SolutionCard.Content.Description>
+              Após a concessão, nossa solução acompanha o comportamento do tomador, detecta sinais
+              precoces de inadimplência e atualiza o perfil de risco dinamicamente, tudo em
+              conformidade com normas regulatórias e com rastreabilidade completa.
+            </SolutionCard.Content.Description>
+            <SolutionCard.Content.Features>
+              <SolutionCard.Content.Feature icon="/balanced_risk.svg">
+                Risco recalibrado com dados em tempo real
+              </SolutionCard.Content.Feature>
+              <SolutionCard.Content.Feature icon="/automatic_report.svg">
+                Relatórios automatizados para auditoria e regulação
+              </SolutionCard.Content.Feature>
+              <SolutionCard.Content.Feature icon="/smart.svg">
+                Conformidade inteligente e contínua
               </SolutionCard.Content.Feature>
             </SolutionCard.Content.Features>
           </SolutionCard.Content>
