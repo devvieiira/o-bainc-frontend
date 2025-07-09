@@ -263,6 +263,32 @@ body {
 	z-index: 1;
 }
 
+
+.gradient-border {
+	position: relative;
+	border-radius: 32px;
+	z-index: 1;
+	overflow: hidden;
+}
+
+.gradient-border::before {
+	content: "";
+	position: absolute;
+	inset: 0;
+	padding: 1px;
+	background: linear-gradient(to bottom,
+			#E6E6E6 0%,
+			#6733EC 25%,
+			#AF56F4 50%,
+			#12F3DA 100%);
+	border-radius: 32px;
+	-webkit-mask:
+		linear-gradient(#fff 0 0) content-box,
+		linear-gradient(#fff 0 0);
+	-webkit-mask-composite: destination-out;
+	mask-composite: exclude;
+	z-index: -1; }
+
 .btn-gradient-hover::before {
 	content: "";
 	position: absolute;
