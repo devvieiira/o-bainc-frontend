@@ -203,6 +203,7 @@ body {
   --color-space-dark: #080b36;
   --color-space-mid: #a7b3d1;
   --color-space-light: #d1d8eb;
+  --color-space-dark-muted: #21234a;
   --color-glass-bg: #292a41;
   --container-8xl: 87.5rem;
   --background-image-button-green: linear-gradient(340deg, #0afbd9 0%, #0bc9ab 60%, #0b977e 100%);
@@ -227,10 +228,10 @@ body {
     rgba(16, 21, 105, 0.7) 50%,
     rgba(8, 11, 54, 1) 100%
   );
-  --background-o-bainc-gradient: linear-gradient(
+  --background-image-o-bainc-gradient: linear-gradient(
     to bottom,
     var(--color-space-dark) 0%,
-    var(--color-o-bainc-mid) 70%,
+    var(--color-o-bainc-mid) 10%,
     var(--color-o-bainc-light) 100%
   );
   --background-image-card-mo: url(../public/background-card-mobile.svg);
@@ -256,31 +257,27 @@ body {
   z-index: 1;
 }
 
-
 .gradient-border {
-	position: relative;
-	border-radius: 32px;
-	z-index: 1;
-	overflow: hidden;
+  position: relative;
+  border-radius: 32px;
+  z-index: 1;
+  overflow: hidden;
 }
 
 .gradient-border::before {
-	content: "";
-	position: absolute;
-	inset: 0;
-	padding: 1px;
-	background: linear-gradient(to bottom,
-			#E6E6E6 0%,
-			#6733EC 25%,
-			#AF56F4 50%,
-			#12F3DA 100%);
-	border-radius: 32px;
-	-webkit-mask:
-		linear-gradient(#fff 0 0) content-box,
-		linear-gradient(#fff 0 0);
-	-webkit-mask-composite: destination-out;
-	mask-composite: exclude;
-	z-index: -1; }
+  content: '';
+  position: absolute;
+  inset: 0;
+  padding: 1px;
+  background: linear-gradient(to bottom, #e6e6e6 0%, #6733ec 25%, #af56f4 50%, #12f3da 100%);
+  border-radius: 32px;
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: destination-out;
+  mask-composite: exclude;
+  z-index: -1;
+}
 
 .btn-gradient-hover::before {
   content: '';
@@ -308,11 +305,9 @@ body {
   overflow: hidden;
   z-index: 1;
 
-  /* O fundo do elemento principal é a cor sólida que APARECERÁ no hover */
   background-color: var(--color-space-dark);
 }
 
-/* O pseudo-elemento segura o gradiente, que está VISÍVEL no início */
 .btn-solid-hover::before {
   content: '';
   position: absolute;
@@ -321,19 +316,14 @@ body {
   right: 0;
   bottom: 0;
 
-  /* O gradiente é aplicado aqui */
-  background-image: var(--background-image-button-green); /* Usando a variável que você já tem */
+  background-image: var(--background-image-button-green);
 
-  /* [MUDANÇA PRINCIPAL] Começa visível */
   opacity: 1;
-
-  /* A transição continua na opacidade */
   transition: opacity 200ms ease-in-out;
 
   z-index: -1;
 }
 
-/* [MUDANÇA PRINCIPAL] No hover, o pseudo-elemento DESAPARECE */
 .btn-solid-hover:hover::before {
   opacity: 0;
 }
