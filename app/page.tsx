@@ -490,19 +490,25 @@ export default function Home() {
         </div>
 
         <div className="px-4">
-          <section className="h-fit w-full rounded-2xl bg-[url(../public/call_investor.png)] bg-cover p-4">
-            <div className="glass flex flex-col space-y-5 rounded-xl p-2 text-center">
-              <h2 className="text-center text-xl font-medium">
+          <section className="h-fit w-full rounded-3xl bg-[url(../public/call_investor.png)] bg-cover bg-center p-5">
+            <div className="flex flex-col items-center justify-center space-y-10 rounded-2xl px-5 py-10 text-center backdrop-blur-2xl">
+              <h2 className="text-center text-2xl font-medium">
                 Vamos juntos construir um novo sistema financeiro?
               </h2>
-              <span className="text-sm">
+              <span className="text-center text-[16px] leading-5 font-normal">
                 Se você é um credor, investidor, regulador ou simplesmente alguém que acredita na
                 inclusão como motor de transformação, junte-se à O-Bainc®.  Estamos prontos para
                 abrir caminhos, gerar oportunidades e transformar vidas.
               </span>
-              <div className="flex h-fit min-h-1/2 w-full flex-col items-center justify-center space-y-3 px-3">
-                <Button className="w-full px-8 py-4">Solicite uma demonstração</Button>
-                <Button className="w-full px-8 py-4" variant={'green'}>
+              <div className="h-full w-full space-y-5">
+                <Button size={'lg'} className="w-full rounded-[12px] px-8 py-6.5 text-lg">
+                  Solicite uma demonstração
+                </Button>
+                <Button
+                  size={'lg'}
+                  className="w-full rounded-[12px] px-8 text-lg"
+                  variant={'green'}
+                >
                   Entre em contato
                 </Button>
               </div>
