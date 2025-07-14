@@ -232,7 +232,8 @@ body {
     to bottom,
     var(--color-space-dark) 0%,
     var(--color-o-bainc-mid) 10%,
-    var(--color-o-bainc-light) 100%
+    var(--color-o-bainc-light) 75%,
+    var(--color-space-dark) 100%
   );
   --background-image-card-mo: url(../public/background-card-mobile.svg);
   --background-image-card-desk: url(../public/background-card-desktop.svg);

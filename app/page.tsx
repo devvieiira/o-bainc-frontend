@@ -1,10 +1,14 @@
+'use client';
+import SolutionCard from '@/components/solutionCard';
 import { Button } from '@/components/ui/button';
 import { Popover, PopoverContent, PopoverTrigger } from '@/components/ui/popover';
 import { Video } from '@/components/video';
 import { Menu } from 'lucide-react';
 import Image from 'next/image';
+import { useRouter } from 'next/navigation';
 
 export default function Home() {
+  const router = useRouter();
   const navLinks = [
     { href: '#', text: 'Soluções' },
     { href: '#', text: 'Produtos' },
@@ -268,8 +272,8 @@ export default function Home() {
               height={1700}
               className="absolute top-1/2 right-0 z-0 h-auto w-auto -translate-y-1/2 lg:h-full"
             />
-            <div className="z-10 flex flex-col items-center px-4">
-              <h2 className="mb-3.5 text-[32px]">Tecnologia própria, impacto real</h2>
+            <div className="z-10 flex w-full flex-col items-center px-4">
+              <h2 className="mb-3.5 text-center text-[32px]">Tecnologia própria, impacto real</h2>
               <div className="flex max-w-[686px] justify-center pt-2">
                 <p className="mb-3.5 text-center">
                   Nossa plataforma proprietária integra dados comportamentais, inteligência
@@ -367,7 +371,7 @@ export default function Home() {
               />
               <Video videoPath="/home_video.mp4" h={460} w={460} className="hidden xl:flex" />
               <div className="space-y-8 pt-10 text-start">
-                <h2 className="text-xl font-medium">QNCaaS – Quantum Native Credit as a Service</h2>
+                <h2 className="text-xl font-medium">QNCaaS – Quantum Native Credit as a Service</h2>{' '}
                 <p>
                   Reimaginando o crédito com inteligência quântica. A O-Bainc® utiliza computação
                   quântica para detectar bons mutuários ignorados por modelos antigos, analisar
@@ -383,6 +387,127 @@ export default function Home() {
               </div>
             </div>
           </div>
+          <div className="mt-16 flex w-full flex-col items-center justify-center space-y-5 px-4 text-center text-black">
+            <div className="mb-4 max-w-sm text-center text-2xl font-medium md:max-w-2xl">
+              <h2 className="">Soluções O-Bainc®</h2>
+              <p className="">Inovação que reconfigura o acesso ao crédito</p>
+            </div>
+            <span className="mb-12 font-[16px]">
+              As soluções da O-Bainc® atuam em toda a jornada do crédito. Da verificação à
+              concessão, com monitoramento contínuo. Inteligência artificial, ética e soberania de
+              dados no centro de tudo.
+            </span>
+
+            <SolutionCard>
+              <SolutionCard.Image alt="identidade visual" image="/visual_identity.png" />
+              <SolutionCard.Content>
+                <SolutionCard.Content.Title>
+                  Identidade Digital Inteligente (CRIP-D®)
+                </SolutionCard.Content.Title>
+                <SolutionCard.Content.Description>
+                  O CRIP-D® cria perfis digitais completos para tomadores sem histórico bancário ou
+                  documentação formal, utilizando dados alternativos. Como comportamento digital,
+                  residência, ocupação, conexões comunitárias e redes públicas. O tomador é o
+                  proprietário dos seus dados e pode compartilhá-los de forma segura e soberana.
+                </SolutionCard.Content.Description>
+                <SolutionCard.Content.Features>
+                  <SolutionCard.Content.Feature icon="/lockIcon.svg">
+                    Verificação segura sem papelada
+                  </SolutionCard.Content.Feature>
+                  <SolutionCard.Content.Feature icon="/handsIcon.svg">
+                    Inclusão real em ambientes informais
+                  </SolutionCard.Content.Feature>
+                  <SolutionCard.Content.Feature icon="/localizationIcon.svg">
+                    Pronto para atuar em qualquer mercado emergente
+                  </SolutionCard.Content.Feature>
+                </SolutionCard.Content.Features>
+              </SolutionCard.Content>
+            </SolutionCard>
+
+            <SolutionCard>
+              <SolutionCard.Image image="/KYC_IA.png" alt="KCY com IA" />
+              <SolutionCard.Content>
+                <SolutionCard.Content.Title>
+                  KYC com IA e Conformidade Total
+                </SolutionCard.Content.Title>
+                <SolutionCard.Content.Description>
+                  Nossa solução de verificação usa inteligência artificial para validar dados de
+                  identidade, endereço, renda e comportamento, em tempo real e com menor fricção
+                  para o tomador. Totalmente em conformidade com GDPR, LGPD, AML e outros padrões
+                  internacionais.
+                </SolutionCard.Content.Description>
+                <SolutionCard.Content.Features>
+                  <SolutionCard.Content.Feature icon="/continuos_update.svg">
+                    Atualização contínua do perfil do cliente
+                  </SolutionCard.Content.Feature>
+                </SolutionCard.Content.Features>
+                <SolutionCard.Content.Feature icon="/reductionIcon.svg">
+                  Redução de fraudes e custos de validação
+                </SolutionCard.Content.Feature>
+                <SolutionCard.Content.Feature icon="/dataGenIcon.svg">
+                  Geração de dados próprios, validados e auditáveis
+                </SolutionCard.Content.Feature>
+              </SolutionCard.Content>
+            </SolutionCard>
+
+            <div className="flex w-full items-center justify-center pt-10 pb-15">
+              <Button
+                className="rounded-xl px-8 py-6 text-[18px]"
+                size={'lg'}
+                onClick={() => router.push('/solutions')}
+              >
+                Veja mais
+              </Button>
+            </div>
+            <section className="mb-24 flex w-full flex-col items-center justify-center space-y-5 text-white">
+              <h2 className="text-2xl font-medium">Impacto Social e Econômico</h2>
+              <p className="mb-12 w-full text-center xl:max-w-2xl">
+                Na O-Bainc®, acreditamos que tecnologia deve servir à equidade. Promovemos inclusão
+                financeira com transparência, segurança e soberania de dados.  Nosso impacto vai
+                além do acesso ao crédito, fomentamos crescimento econômico, geração de empregos e
+                bem-estar financeiro em comunidades negligenciadas.
+              </p>
+              <div className="grid grid-cols-1 md:grid-cols-2 md:gap-x-8 md:gap-y-12 xl:grid-cols-3 xl:gap-x-12">
+                <div className="flex flex-col items-center justify-center space-y-3 text-center">
+                  <h3 className="text-6xl">+1,5</h3>
+                  <p className="max-w-xs">
+                    milhões de pequenas empresas podem ser criadas no Brasil
+                  </p>
+                </div>
+
+                <div className="border-space-mid my-5 flex flex-col items-center space-y-3 border-y py-10 text-center md:my-0 md:border-y-0 md:border-l md:py-0 md:pl-8 md:text-left xl:items-center xl:border-x xl:px-8 xl:text-center">
+                  <h3 className="text-6xl">+4%</h3>
+                  <p className="max-w-xs">acesso ao crédito pode adicionar +4% ao PIB em 5 anos</p>
+                </div>
+
+                <div className="flex flex-col items-center justify-center space-y-3 text-center md:col-span-2 xl:col-span-1">
+                  <h3 className="text-6xl">100M</h3>
+                  <p className="max-w-xs">empregos gerados a cada 1% de expansão do crédito</p>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+
+        <div className="px-4">
+          <section className="h-fit w-full rounded-2xl bg-[url(../public/call_investor.png)] bg-cover p-4">
+            <div className="glass flex flex-col space-y-5 rounded-xl p-2 text-center">
+              <h2 className="text-center text-xl font-medium">
+                Vamos juntos construir um novo sistema financeiro?
+              </h2>
+              <span className="text-sm">
+                Se você é um credor, investidor, regulador ou simplesmente alguém que acredita na
+                inclusão como motor de transformação, junte-se à O-Bainc®.  Estamos prontos para
+                abrir caminhos, gerar oportunidades e transformar vidas.
+              </span>
+              <div className="flex h-fit min-h-1/2 w-full flex-col items-center justify-center space-y-3 px-3">
+                <Button className="w-full px-8 py-4">Solicite uma demonstração</Button>
+                <Button className="w-full px-8 py-4" variant={'green'}>
+                  Entre em contato
+                </Button>
+              </div>
+            </div>
+          </section>
         </div>
       </div>
     </main>

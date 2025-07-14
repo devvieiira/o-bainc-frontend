@@ -8,7 +8,7 @@ export interface FeatureProps {
 
 export function Feature({ children, icon }: FeatureProps) {
   return (
-    <li className="flex w-full items-center justify-start gap-x-4">
+    <li className="flex w-full items-center justify-start gap-x-4 text-start">
       <Image src={icon} alt="Ícone da feature" width={55} height={55} />
       <span>{children}</span>
     </li>
