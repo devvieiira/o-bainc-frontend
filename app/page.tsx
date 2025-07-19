@@ -1,7 +1,14 @@
 'use client';
+import Footer from '@/components/footer';
 import SolutionCard from '@/components/solutionCard';
 import { Button } from '@/components/ui/button';
-import { Popover, PopoverContent, PopoverTrigger } from '@/components/ui/popover';
+import { Input } from '@/components/ui/input';
+import {
+  Popover,
+  PopoverContent,
+  PopoverTrigger,
+} from '@/components/ui/popover';
+import { Separator } from '@/components/ui/separator';
 import { Video } from '@/components/video';
 import { Menu } from 'lucide-react';
 import Image from 'next/image';
@@ -20,7 +27,13 @@ export default function Home() {
     <main className="flex min-h-screen w-full flex-col items-center">
       <header className="fixed top-0 right-0 left-0 z-50 flex w-full items-center justify-between p-10">
         <div className="glass flex h-14 max-w-[200px] items-center justify-center rounded-2xl px-7 py-3.5">
-          <Image className="" src={'/logo.svg'} alt="o-bainc logo" width={170} height={20} />
+          <Image
+            className=""
+            src={'/logo.svg'}
+            alt="o-bainc logo"
+            width={170}
+            height={20}
+          />
         </div>
         <div className="glass flex h-12 w-12 items-center justify-center rounded-2xl border-white/20 bg-white/10 p-2 md:h-14 md:w-fit lg:w-fit">
           <ul className="flex h-full w-full items-center justify-center gap-x-2 px-4 font-bold">
@@ -39,7 +52,12 @@ export default function Home() {
                 <PopoverTrigger asChild>
                   <Menu className="h-6 w-6" />
                 </PopoverTrigger>
-                <PopoverContent align="end" sideOffset={12} alignOffset={-28} className="w-fit">
+                <PopoverContent
+                  align="end"
+                  sideOffset={12}
+                  alignOffset={-28}
+                  className="w-fit"
+                >
                   <ul className="flex flex-col gap-2 p-2 text-center font-bold">
                     {navLinks.map((link) => (
                       <li
@@ -99,7 +117,8 @@ export default function Home() {
 
             <div className="absolute bottom-0 z-10 space-y-6 px-16 py-16 text-white">
               <h1 className="max-w-xs text-2xl leading-tight font-semibold md:max-w-xl md:text-3xl">
-                Quebrando Barreiras com Inteligência: O Futuro do Crédito Começa Aqui
+                Quebrando Barreiras com Inteligência: O Futuro do Crédito Começa
+                Aqui
               </h1>
               <Button className="text-md h-fit rounded-xl px-8 py-3">
                 Conheça nossas soluções
@@ -111,9 +130,9 @@ export default function Home() {
         <section className="flex w-full items-end justify-end px-3.5 py-10 xl:mt-5 xl:px-15">
           <div className="flex w-full items-center justify-end xl:mx-40">
             <p className="mb-3.5 ml-14 max-w-[630px] text-justify md:mr-4 md:ml-2">
-              A O-Bainc® combina inteligência artificial, identidade digital e avaliação de risco
-              em tempo real para transformar o acesso ao crédito em mercados invisíveis, com
-              segurança, inclusão e ética.
+              A O-Bainc® combina inteligência artificial, identidade digital e
+              avaliação de risco em tempo real para transformar o acesso ao
+              crédito em mercados invisíveis, com segurança, inclusão e ética.
             </p>
           </div>
         </section>
@@ -148,7 +167,9 @@ export default function Home() {
             </div>
             <div className="space-y-2 pt-4 pl-10 md:mt-6 md:border-l md:border-[#7E86B0] md:pt-0 lg:mt-0">
               <h2 className="max-w-[281px] text-center text-6xl">IA</h2>
-              <p className="mb-3.5 max-w-[281px] text-center">que reduz inadimplência em até 30%</p>
+              <p className="mb-3.5 max-w-[281px] text-center">
+                que reduz inadimplência em até 30%
+              </p>
             </div>
           </div>
         </section>
@@ -175,8 +196,9 @@ export default function Home() {
               <div className="pt-2">
                 <h3 className="pb-4 text-center text-[20px]">IA para o Bem</h3>
                 <p className="text-center">
-                  Usamos IA, ciência de dados e engenharia avançada para resolver problemas reais.
-                  Não apenas para ganhar eficiência, mas para gerar inclusão.
+                  Usamos IA, ciência de dados e engenharia avançada para
+                  resolver problemas reais. Não apenas para ganhar eficiência,
+                  mas para gerar inclusão.
                 </p>
               </div>
             </div>
@@ -196,10 +218,13 @@ export default function Home() {
                 className="mb-3.5 rounded-2xl md:hidden"
               />
               <div className="pt-2">
-                <h3 className="pb-4 text-center text-[20px]">Compromisso com o humano</h3>
+                <h3 className="pb-4 text-center text-[20px]">
+                  Compromisso com o humano
+                </h3>
                 <p className="text-center">
-                  Cada linha de código que escrevemos é para ampliar oportunidades, empoderar
-                  indivíduos e fomentar ecossistemas financeiros mais justos.
+                  Cada linha de código que escrevemos é para ampliar
+                  oportunidades, empoderar indivíduos e fomentar ecossistemas
+                  financeiros mais justos.
                 </p>
               </div>
             </div>
@@ -219,10 +244,13 @@ export default function Home() {
                 className="mb-3.5 rounded-2xl md:hidden"
               />
               <div className="pt-2">
-                <h3 className="pb-4 text-center text-[20px]">Ética e soberania de dados</h3>
+                <h3 className="pb-4 text-center text-[20px]">
+                  Ética e soberania de dados
+                </h3>
                 <p className="text-center">
-                  Nosso modelo garante que os tomadores mantenham controle total sobre suas
-                  informações pessoais. Transparência, segurança e respeito são inegociáveis.
+                  Nosso modelo garante que os tomadores mantenham controle total
+                  sobre suas informações pessoais. Transparência, segurança e
+                  respeito são inegociáveis.
                 </p>
               </div>
             </div>
@@ -273,81 +301,128 @@ export default function Home() {
               className="absolute top-1/2 right-0 z-0 h-auto w-auto -translate-y-1/2 lg:h-full"
             />
             <div className="z-10 flex w-full flex-col items-center px-4">
-              <h2 className="mb-3.5 text-center text-[32px]">Tecnologia própria, impacto real</h2>
+              <h2 className="mb-3.5 text-center text-[32px]">
+                Tecnologia própria, impacto real
+              </h2>
               <div className="flex max-w-[686px] justify-center pt-2">
                 <p className="mb-3.5 text-center">
-                  Nossa plataforma proprietária integra dados comportamentais, inteligência
-                  artificial e análise de risco em tempo real para expandir o acesso ao crédito de
-                  forma segura.Do CRIP-D® ao OBDC®, nossas soluções foram criadas para quebrar
-                  barreiras invisíveis que excluem bilhões de tomadores.
+                  Nossa plataforma proprietária integra dados comportamentais,
+                  inteligência artificial e análise de risco em tempo real para
+                  expandir o acesso ao crédito de forma segura.Do CRIP-D® ao
+                  OBDC®, nossas soluções foram criadas para quebrar barreiras
+                  invisíveis que excluem bilhões de tomadores.
                 </p>
               </div>
             </div>
             <div className="z-10 flex w-full flex-col items-center space-y-6 px-4 pt-14">
               <div className="glass gradient-border flex w-full max-w-[1050px] flex-col p-2 md:flex-row">
-                <Image src={'/crip-d.svg'} alt="crip-d icon" width={140} height={140} />
+                <Image
+                  src={'/crip-d.svg'}
+                  alt="crip-d icon"
+                  width={140}
+                  height={140}
+                />
                 <div className="flex flex-col items-start p-5">
-                  <h3 className="mb-3.5 text-[20px]">Identidade Digital Soberana</h3>
+                  <h3 className="mb-3.5 text-[20px]">
+                    Identidade Digital Soberana
+                  </h3>
                   <p className="mb-2 max-w-[665px] text-[16px]">
-                    A base da inclusão financeira real. CRIP-D® cria identidades digitais completas
-                    para tomadores que não possuem histórico formal.{' '}
+                    A base da inclusão financeira real. CRIP-D® cria
+                    identidades digitais completas para tomadores que não
+                    possuem histórico formal.{' '}
                     <span className="underline">Saber mais</span>
                   </p>
                 </div>
               </div>
               <div className="glass gradient-border flex w-full max-w-[1050px] flex-col p-2 md:flex-row">
-                <Image src={'/adg.svg'} alt="adg icon" width={140} height={140} />
+                <Image
+                  src={'/adg.svg'}
+                  alt="adg icon"
+                  width={140}
+                  height={140}
+                />
                 <div className="flex flex-col items-start p-5">
-                  <h3 className="mb-3.5 text-[20px]">Mecanismo de Decisão de Crédito com IA</h3>
+                  <h3 className="mb-3.5 text-[20px]">
+                    Mecanismo de Decisão de Crédito com IA
+                  </h3>
                   <p className="mb-2 max-w-[665px] text-[16px]">
                     {' '}
-                    Avaliação de risco em tempo real, com precisão incomparável. ADG® transforma
-                    dados em decisões rápidas, seguras e justas.{' '}
+                    Avaliação de risco em tempo real, com precisão incomparável.
+                    ADG® transforma dados em decisões rápidas, seguras e
+                    justas. <span className="underline">Saber mais</span>
+                  </p>
+                </div>
+              </div>
+              <div className="glass gradient-border flex w-full max-w-[1050px] flex-col p-2 md:flex-row">
+                <Image
+                  src={'/imc.svg'}
+                  alt="icm icon"
+                  width={140}
+                  height={140}
+                />
+                <div className="flex flex-col items-start p-5">
+                  <h3 className="mb-3.5 text-[20px]">
+                    Plataforma Integrada de Gestão de Crédito
+                  </h3>
+                  <p className="mb-2 max-w-[665px] text-[16px]">
+                    Uma plataforma completa para integrar identidade, KYC,
+                    conformidade e decisões de crédito em um único lugar.{' '}
                     <span className="underline">Saber mais</span>
                   </p>
                 </div>
               </div>
               <div className="glass gradient-border flex w-full max-w-[1050px] flex-col p-2 md:flex-row">
-                <Image src={'/imc.svg'} alt="icm icon" width={140} height={140} />
-                <div className="flex flex-col items-start p-5">
-                  <h3 className="mb-3.5 text-[20px]">Plataforma Integrada de Gestão de Crédito</h3>
-                  <p className="mb-2 max-w-[665px] text-[16px]">
-                    Uma plataforma completa para integrar identidade, KYC, conformidade e decisões
-                    de crédito em um único lugar. <span className="underline">Saber mais</span>
-                  </p>
-                </div>
-              </div>
-              <div className="glass gradient-border flex w-full max-w-[1050px] flex-col p-2 md:flex-row">
-                <Image src={'/orbitale.svg'} alt="orbitale icon" width={140} height={140} />
+                <Image
+                  src={'/orbitale.svg'}
+                  alt="orbitale icon"
+                  width={140}
+                  height={140}
+                />
                 <div className="flex flex-col items-start p-5">
                   <h3 className="mb-3.5 text-[20px]">
                     Análise de Risco de Portfólio e Inadimplência
                   </h3>
                   <p className="mb-2 max-w-[665px] text-[16px]">
-                    Plataforma de gestão de risco que antecipa inadimplência com até 75% mais
-                    precisão que modelos tradicionais. <span className="underline">Saber mais</span>
-                  </p>
-                </div>
-              </div>
-              <div className="glass gradient-border flex w-full max-w-[1050px] flex-col p-2 md:flex-row">
-                <Image src={'/verdaji.svg'} alt="verdaji icon" width={140} height={140} />
-                <div className="flex flex-col items-start p-5">
-                  <h3 className="mb-3.5 text-[20px]">Identidade de Crédito Autogerida</h3>
-                  <p className="mb-2 max-w-[665px] text-[16px]">
-                    Aplicativo de identidade digital baseado em soberania de dados e criptografia
-                    quântica. Dá ao usuário total controle sobre seu perfil financeiro.{' '}
+                    Plataforma de gestão de risco que antecipa inadimplência com
+                    até 75% mais precisão que modelos tradicionais.{' '}
                     <span className="underline">Saber mais</span>
                   </p>
                 </div>
               </div>
               <div className="glass gradient-border flex w-full max-w-[1050px] flex-col p-2 md:flex-row">
-                <Image src={'/obdc.svg'} alt="obdc icon" width={140} height={140} />
+                <Image
+                  src={'/verdaji.svg'}
+                  alt="verdaji icon"
+                  width={140}
+                  height={140}
+                />
                 <div className="flex flex-col items-start p-5">
-                  <h3 className="mb-3.5 text-[20px]">Open Bank Digital Currency</h3>
+                  <h3 className="mb-3.5 text-[20px]">
+                    Identidade de Crédito Autogerida
+                  </h3>
                   <p className="mb-2 max-w-[665px] text-[16px]">
-                    A moeda digital mais segura do mundo para crédito inclusivo. Lastreada em ativos
-                    múltiplos e protegida por segurança quântica.{' '}
+                    Aplicativo de identidade digital baseado em soberania de
+                    dados e criptografia quântica. Dá ao usuário total controle
+                    sobre seu perfil financeiro.{' '}
                     <span className="underline">Saber mais</span>
+                  </p>
+                </div>
+              </div>
+              <div className="glass gradient-border flex w-full max-w-[1050px] flex-col p-2 md:flex-row">
+                <Image
+                  src={'/obdc.svg'}
+                  alt="obdc icon"
+                  width={140}
+                  height={140}
+                />
+                <div className="flex flex-col items-start p-5">
+                  <h3 className="mb-3.5 text-[20px]">
+                    Open Bank Digital Currency
+                  </h3>
+                  <p className="mb-2 max-w-[665px] text-[16px]">
+                    A moeda digital mais segura do mundo para crédito inclusivo.
+                    Lastreada em ativos múltiplos e protegida por segurança
+                    quântica. <span className="underline">Saber mais</span>
                   </p>
                 </div>
               </div>
@@ -359,8 +434,9 @@ export default function Home() {
               Cŕedito Impulsionado por Computação Quântica para Todos
             </h2>
             <p className="mb-13 max-w-2xl">
-              Aproveitando tecnologia quântica de ponta para liberar crédito a populações
-              desassistidas, protegendo ao mesmo tempo os credores contra riscos.
+              Aproveitando tecnologia quântica de ponta para liberar crédito a
+              populações desassistidas, protegendo ao mesmo tempo os credores
+              contra riscos.
             </p>
             <div className="bg-space-dark-muted flex flex-col items-center justify-center rounded-4xl p-5 text-white lg:max-w-6xl xl:flex-row xl:space-x-15">
               <Video
@@ -369,18 +445,28 @@ export default function Home() {
                 w={355}
                 className="h-full w-full xl:hidden"
               />
-              <Video videoPath="/home_video.mp4" h={460} w={460} className="hidden xl:flex" />
+              <Video
+                videoPath="/home_video.mp4"
+                h={460}
+                w={460}
+                className="hidden xl:flex"
+              />
               <div className="space-y-8 pt-10 text-start">
-                <h2 className="text-xl font-medium">QNCaaS – Quantum Native Credit as a Service</h2>{' '}
+                <h2 className="text-xl font-medium">
+                  QNCaaS – Quantum Native Credit as a Service
+                </h2>{' '}
                 <p>
-                  Reimaginando o crédito com inteligência quântica. A O-Bainc® utiliza computação
-                  quântica para detectar bons mutuários ignorados por modelos antigos, analisar
-                  dados multidimensionais em tempo real, e ajustar risco com precisão incomparável.
+                  Reimaginando o crédito com inteligência quântica. A O-Bainc®
+                  utiliza computação quântica para detectar bons mutuários
+                  ignorados por modelos antigos, analisar dados
+                  multidimensionais em tempo real, e ajustar risco com precisão
+                  incomparável.
                 </p>
                 <div className="w-full space-y-4">
                   <p>
-                    “A computação quântica nos permite fazer o que outros não conseguem, tomar
-                    decisões de crédito mais rápidas, justas e resilientes.”
+                    “A computação quântica nos permite fazer o que outros não
+                    conseguem, tomar decisões de crédito mais rápidas, justas e
+                    resilientes.”
                   </p>
                   <p className="text-end">— Mark Fisher, Fundador & CEO</p>
                 </div>
@@ -393,22 +479,27 @@ export default function Home() {
               <p className="">Inovação que reconfigura o acesso ao crédito</p>
             </div>
             <span className="mb-12 font-[16px]">
-              As soluções da O-Bainc® atuam em toda a jornada do crédito. Da verificação à
-              concessão, com monitoramento contínuo. Inteligência artificial, ética e soberania de
-              dados no centro de tudo.
+              As soluções da O-Bainc® atuam em toda a jornada do crédito. Da
+              verificação à concessão, com monitoramento contínuo. Inteligência
+              artificial, ética e soberania de dados no centro de tudo.
             </span>
 
             <SolutionCard>
-              <SolutionCard.Image alt="identidade visual" image="/visual_identity.png" />
+              <SolutionCard.Image
+                alt="identidade visual"
+                image="/visual_identity.png"
+              />
               <SolutionCard.Content>
                 <SolutionCard.Content.Title>
                   Identidade Digital Inteligente (CRIP-D®)
                 </SolutionCard.Content.Title>
                 <SolutionCard.Content.Description>
-                  O CRIP-D® cria perfis digitais completos para tomadores sem histórico bancário ou
-                  documentação formal, utilizando dados alternativos. Como comportamento digital,
-                  residência, ocupação, conexões comunitárias e redes públicas. O tomador é o
-                  proprietário dos seus dados e pode compartilhá-los de forma segura e soberana.
+                  O CRIP-D® cria perfis digitais completos para tomadores sem
+                  histórico bancário ou documentação formal, utilizando dados
+                  alternativos. Como comportamento digital, residência,
+                  ocupação, conexões comunitárias e redes públicas. O tomador é
+                  o proprietário dos seus dados e pode compartilhá-los de forma
+                  segura e soberana.
                 </SolutionCard.Content.Description>
                 <SolutionCard.Content.Features>
                   <SolutionCard.Content.Feature icon="/lockIcon.svg">
@@ -431,9 +522,10 @@ export default function Home() {
                   KYC com IA e Conformidade Total
                 </SolutionCard.Content.Title>
                 <SolutionCard.Content.Description>
-                  Nossa solução de verificação usa inteligência artificial para validar dados de
-                  identidade, endereço, renda e comportamento, em tempo real e com menor fricção
-                  para o tomador. Totalmente em conformidade com GDPR, LGPD, AML e outros padrões
+                  Nossa solução de verificação usa inteligência artificial para
+                  validar dados de identidade, endereço, renda e comportamento,
+                  em tempo real e com menor fricção para o tomador. Totalmente
+                  em conformidade com GDPR, LGPD, AML e outros padrões
                   internacionais.
                 </SolutionCard.Content.Description>
                 <SolutionCard.Content.Features>
@@ -460,11 +552,14 @@ export default function Home() {
               </Button>
             </div>
             <section className="mb-24 flex w-full flex-col items-center justify-center space-y-5 text-white">
-              <h2 className="text-2xl font-medium">Impacto Social e Econômico</h2>
+              <h2 className="text-2xl font-medium">
+                Impacto Social e Econômico
+              </h2>
               <p className="mb-12 w-full text-center xl:max-w-2xl">
-                Na O-Bainc®, acreditamos que tecnologia deve servir à equidade. Promovemos inclusão
-                financeira com transparência, segurança e soberania de dados.  Nosso impacto vai
-                além do acesso ao crédito, fomentamos crescimento econômico, geração de empregos e
+                Na O-Bainc®, acreditamos que tecnologia deve servir à equidade.
+                Promovemos inclusão financeira com transparência, segurança e
+                soberania de dados.  Nosso impacto vai além do acesso ao
+                crédito, fomentamos crescimento econômico, geração de empregos e
                 bem-estar financeiro em comunidades negligenciadas.
               </p>
               <div className="grid grid-cols-1 md:grid-cols-2 md:gap-x-8 md:gap-y-12 xl:grid-cols-3 xl:gap-x-12">
@@ -477,31 +572,39 @@ export default function Home() {
 
                 <div className="border-space-mid my-5 flex flex-col items-center space-y-3 border-y py-10 text-center md:my-0 md:border-y-0 md:border-l md:py-0 md:pl-8 md:text-left xl:items-center xl:border-x xl:px-8 xl:text-center">
                   <h3 className="text-6xl">+4%</h3>
-                  <p className="max-w-xs">acesso ao crédito pode adicionar +4% ao PIB em 5 anos</p>
+                  <p className="max-w-xs">
+                    acesso ao crédito pode adicionar +4% ao PIB em 5 anos
+                  </p>
                 </div>
 
                 <div className="flex flex-col items-center justify-center space-y-3 text-center md:col-span-2 xl:col-span-1">
                   <h3 className="text-6xl">100M</h3>
-                  <p className="max-w-xs">empregos gerados a cada 1% de expansão do crédito</p>
+                  <p className="max-w-xs">
+                    empregos gerados a cada 1% de expansão do crédito
+                  </p>
                 </div>
               </div>
             </section>
           </div>
         </div>
 
-        <div className="px-4">
-          <section className="h-fit w-full rounded-3xl bg-[url(../public/call_investor.png)] bg-cover bg-center p-5">
-            <div className="flex flex-col items-center justify-center space-y-10 rounded-2xl px-5 py-10 text-center backdrop-blur-2xl">
+        <div className="p-4 mb-9 h-auto w-full ">
+          <section className="md:min-h-[615px] xl:min-h-[810px] h-fit flex items-center justify-center w-full rounded-3xl bg-[url(../public/call_investor.png)] py-10 px-5 md:p-10 xl:p-15 bg-cover bg-center p-5">
+            <div className="flex flex-col items-center justify-center space-y-10 rounded-2xl text-center backdrop-blur-2xl py-10 px-5 md:p-10 xl:p-15 md:max-w-3xl">
               <h2 className="text-center text-2xl font-medium">
                 Vamos juntos construir um novo sistema financeiro?
               </h2>
               <span className="text-center text-[16px] leading-5 font-normal">
-                Se você é um credor, investidor, regulador ou simplesmente alguém que acredita na
-                inclusão como motor de transformação, junte-se à O-Bainc®.  Estamos prontos para
-                abrir caminhos, gerar oportunidades e transformar vidas.
+                Se você é um credor, investidor, regulador ou simplesmente
+                alguém que acredita na inclusão como motor de transformação,
+                junte-se à O-Bainc®.  Estamos prontos para abrir caminhos,
+                gerar oportunidades e transformar vidas.
               </span>
               <div className="h-full w-full space-y-5">
-                <Button size={'lg'} className="w-full rounded-[12px] px-8 py-6.5 text-lg">
+                <Button
+                  size={'lg'}
+                  className="w-full rounded-[12px] px-8 py-6.5 text-lg"
+                >
                   Solicite uma demonstração
                 </Button>
                 <Button
@@ -515,6 +618,37 @@ export default function Home() {
             </div>
           </section>
         </div>
+      </div>
+
+      <div className="w-full bg-o-bainc-gradient">
+        <div className="w-full p-5 xl:py-10 ">
+          <Separator className="bg-space-mid" />
+
+          <div className="p-5 space-y-7 w-full px-4 flex flex-col items-center justify-center xl:space-y-0 xl:flex-row  xl:py-12">
+            {' '}
+            <h2 className="font-medium text-2xl w-full xl:text-4xl text-center">
+              Assine nossa Newsletter
+            </h2>
+            {/* TODO: add email to newslatter list ( needded to verify with o-bainc admin) */}
+            <form className="w-full space-y-3 flex flex-col items-center justify-center md:flex-row md:space-y-0 md:space-x-3">
+              <input
+                className="w-full border border-space-mid px-6 py-3 rounded-xl"
+                required
+                type="email"
+                alt="email"
+                placeholder="Seu E-mail"
+              />
+              <button
+                type="submit"
+                className="w-full md:w-1/3  px-6 py-3 rounded-xl bg-space-mid"
+              >
+                Inscreva-se
+              </button>
+            </form>
+          </div>
+          <Separator className="bg-space-mid" />
+        </div>
+        <Footer />
       </div>
     </main>
   );
