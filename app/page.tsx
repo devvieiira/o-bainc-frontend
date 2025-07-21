@@ -26,12 +26,12 @@ export default function Home() {
   return (
     <main className="flex min-h-screen w-full flex-col items-center">
       <header className="fixed top-0 right-0 left-0 z-50 flex w-full items-center justify-between p-[38px]">
-        <div className="glass flex h-[57px] md:h-16 max-w-[260px] items-center justify-center rounded-2xl px-7 py-3.5">
+        <div className="glass flex h-[57px] md:h-16 max-w-[220px] items-center justify-center rounded-2xl px-7 py-3.5">
           <Image
             className="hidden md:flex"
             src={'/logo.svg'}
             alt="o-bainc logo"
-            width={220}
+            width={170}
             height={40}
           />
           <Image
@@ -123,7 +123,7 @@ export default function Home() {
             </div>
 
             <div className="absolute bottom-0 z-10 space-y-6 px-10 md:px-16 py-16 text-white">
-              <h1 className="max-w-11/12 text-2xl leading-tight font-medium md:max-w-3/5 mx-auto md:text-[34px]">
+              <h1 className="max-w-full text-2xl leading-tight font-medium md:max-w-3/5 mx-auto md:text-[34px]">
                 Quebrando Barreiras com Inteligência: O Futuro do Crédito Começa
                 Aqui
               </h1>
