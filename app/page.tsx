@@ -26,17 +26,24 @@ export default function Home() {
   return (
     <main className="flex min-h-screen w-full flex-col items-center">
       <header className="fixed top-0 right-0 left-0 z-50 flex w-full items-center justify-between p-10">
-        <div className="glass flex h-14 max-w-[200px] items-center justify-center rounded-2xl px-7 py-3.5">
+        <div className="glass flex h-[59px] md:h-16 max-w-[260px] items-center justify-center rounded-2xl px-7 py-3.5">
           <Image
-            className=""
+            className="hidden md:flex"
             src={'/logo.svg'}
             alt="o-bainc logo"
-            width={170}
-            height={20}
+            width={220}
+            height={40}
+          />
+          <Image
+            className="md:hidden"
+            src={'/logo.svg'}
+            alt="o-bainc logo"
+            width={150}
+            height={40}
           />
         </div>
-        <div className="glass flex h-12 w-12 items-center justify-center rounded-2xl border-white/20 bg-white/10 p-2 md:h-14 md:w-fit lg:w-fit">
-          <ul className="flex h-full w-full items-center justify-center gap-x-2 px-4 font-bold">
+        <div className="glass flex h-14 w-14 items-center justify-center rounded-2xl border-white/20 bg-white/10 p-2 md:h-16 md:w-fit lg:w-fit">
+          <ul className="flex h-full w-full items-center justify-center gap-x-8 px-4 font-bold">
             {navLinks.map((link) => (
               <li
                 key={link.text}
@@ -44,13 +51,13 @@ export default function Home() {
               >
                 <a href={link.href} className="">
                   {link.text}
-                </a>
+                </a> 
               </li>
             ))}
-            <li className="flex items-center justify-center rounded-xl p-1 text-center transition-all hover:bg-white hover:text-black">
+            <li className="flex items-center justify-center rounded-xl lg:hidden text-center transition-all hover:bg-white hover:text-black">
               <Popover>
                 <PopoverTrigger asChild>
-                  <Menu className="h-6 w-6" />
+                  <Image className='p-[15px]' src={"/mobile-menu.svg"} alt='menu' fill/>
                 </PopoverTrigger>
                 <PopoverContent
                   align="end"
@@ -116,11 +123,11 @@ export default function Home() {
             </div>
 
             <div className="absolute bottom-0 z-10 space-y-6 px-16 py-16 text-white">
-              <h1 className="max-w-xs text-2xl leading-tight font-semibold md:max-w-xl md:text-3xl">
+              <h1 className="max-w-11/12 text-2xl leading-tight font-semibold md:max-w-3/5 mx-auto md:text-[34px]">
                 Quebrando Barreiras com Inteligência: O Futuro do Crédito Começa
                 Aqui
               </h1>
-              <Button className="text-md h-fit rounded-xl px-8 py-3">
+              <Button className="text-[18px] h-fit rounded-xl px-8 py-[15px]">
                 Conheça nossas soluções
               </Button>
             </div>
@@ -497,7 +504,7 @@ export default function Home() {
                   O CRIP-D® cria perfis digitais completos para tomadores sem
                   histórico bancário ou documentação formal, utilizando dados
                   alternativos. Como comportamento digital, residência,
-                  ocupação, conexões comunitárias e redes públicas. O tomador é
+                  ocupação, conexões comunitárias e redes públicas.O tomador é
                   o proprietário dos seus dados e pode compartilhá-los de forma
                   segura e soberana.
                 </SolutionCard.Content.Description>
@@ -524,7 +531,7 @@ export default function Home() {
                 <SolutionCard.Content.Description>
                   Nossa solução de verificação usa inteligência artificial para
                   validar dados de identidade, endereço, renda e comportamento,
-                  em tempo real e com menor fricção para o tomador. Totalmente
+                  em tempo real e com menor fricção para o tomador.Totalmente
                   em conformidade com GDPR, LGPD, AML e outros padrões
                   internacionais.
                 </SolutionCard.Content.Description>
@@ -558,7 +565,7 @@ export default function Home() {
               <p className="mb-12 w-full text-center xl:max-w-2xl">
                 Na O-Bainc®, acreditamos que tecnologia deve servir à equidade.
                 Promovemos inclusão financeira com transparência, segurança e
-                soberania de dados.  Nosso impacto vai além do acesso ao
+                soberania de dados. Nosso impacto vai além do acesso ao
                 crédito, fomentamos crescimento econômico, geração de empregos e
                 bem-estar financeiro em comunidades negligenciadas.
               </p>
@@ -597,7 +604,7 @@ export default function Home() {
               <span className="text-center text-[16px] leading-5 font-normal">
                 Se você é um credor, investidor, regulador ou simplesmente
                 alguém que acredita na inclusão como motor de transformação,
-                junte-se à O-Bainc®.  Estamos prontos para abrir caminhos,
+                junte-se à O-Bainc®. Estamos prontos para abrir caminhos,
                 gerar oportunidades e transformar vidas.
               </span>
               <div className="h-full w-full space-y-5">

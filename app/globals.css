@@ -214,7 +214,7 @@ body {
   --color-space-mid: #a7b3d1;
   --color-space-light: #d1d8eb;
   --color-space-dark-muted: #21234a;
-  --color-glass-bg: #292a41;
+  --color-glass-bg: #292a4126;
   --container-8xl: 87.5rem;
   --background-image-button-green: linear-gradient(
     340deg,
@@ -275,7 +275,7 @@ body {
 }
 
 @utility glass {
-  background-color: rgb(from var(--color-glass-bg) r g b / 0.5);
+  background-color: rgb(from var(--color-glass-bg) r g b / 0.15);
   backdrop-filter: blur(8px);
 }
 
