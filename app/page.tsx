@@ -123,7 +123,7 @@ export default function Home() {
             </div>
 
             <div className="absolute bottom-0 z-10 space-y-6 px-10 md:px-16 py-16 text-white">
-              <h1 className="max-w-11/12 text-2xl leading-tight font-semibold md:max-w-3/5 mx-auto md:text-[34px]">
+              <h1 className="max-w-11/12 text-2xl leading-tight font-medium md:max-w-3/5 mx-auto md:text-[34px]">
                 Quebrando Barreiras com Inteligência: O Futuro do Crédito Começa
                 Aqui
               </h1>
@@ -145,34 +145,34 @@ export default function Home() {
         </section>
         <section>
           <div className="w-full pb-8">
-            <div className="flex w-full justify-center pt-14">
-              <p className="max-w-[700px] text-center text-2xl font-semibold text-white xl:text-3xl">
+            <div className="flex w-full justify-center pt-14 px-12 md:px-0">
+              <p className="max-w-[700px] text-center text-2xl font-medium text-white xl:text-3xl">
                 Bilhões estão excluídos. Nós estamos mudando isso
               </p>
             </div>
           </div>
         </section>
-        <section className="flex justify-center px-14">
+        <section className="flex justify-center px-[15px]">
           <div className="grid grid-cols-1 py-8 md:grid-cols-2 lg:grid-cols-4">
-            <div className="space-y-2 border-b border-[#7E86B0] pr-10 pb-2 pl-10 md:mb-8 md:border-b-0 lg:mb-0 lg:pl-0">
+            <div className="space-y-2 border-b border-[#7E86B0] pr-10 pb-4 pl-10 md:mb-8 md:border-b-0 lg:mb-0 lg:pl-0">
               <h2 className="max-w-[281px] text-center text-6xl">±4</h2>
               <p className="mb-3.5 max-w-[281px] text-center">
                 bilhões de pessoas no mundo são invisíveis ao crédito
               </p>
             </div>
-            <div className="space-y-2 border-b border-[#7E86B0] pt-4 pr-10 pb-2 pl-10 md:mb-8 md:border-b-0 md:border-l md:border-[#7E86B0] md:pt-0 md:pb-0 lg:mb-0">
+            <div className="space-y-2 border-b border-[#7E86B0] pt-8 pr-10 pb-4 pl-10 md:mb-8 md:border-b-0 md:border-l md:border-[#7E86B0] md:pt-0 md:pb-0 lg:mb-0">
               <h2 className="max-w-[281px] text-center text-6xl">+65</h2>
               <p className="mb-3.5 max-w-[281px] text-center">
                 milhões de brasileiros invísiveis ao crédito
               </p>
             </div>
-            <div className="space-y-2 border-b border-[#7E86B0] pt-4 pr-10 pb-2 pl-10 md:mt-6 md:border-b-0 md:pt-0 md:pb-0 lg:mt-0 lg:border-l lg:border-[#7E86B0]">
+            <div className="space-y-2 border-b border-[#7E86B0] pt-8 pr-10 pb-4 pl-10 md:mt-6 md:border-b-0 md:pt-0 md:pb-0 lg:mt-0 lg:border-l lg:border-[#7E86B0]">
               <h2 className="max-w-[281px] text-center text-6xl">+300</h2>
               <p className="mb-3.5 max-w-[281px] text-center">
                 milhões de latino-americanos carentes de serviço financeiros
               </p>
             </div>
-            <div className="space-y-2 pt-4 pl-10 md:mt-6 md:border-l md:border-[#7E86B0] md:pt-0 lg:mt-0">
+            <div className="space-y-2 pt-8 pl-10 pr-10 md:mt-6 md:border-l md:border-[#7E86B0] md:pt-0 lg:mt-0">
               <h2 className="max-w-[281px] text-center text-6xl">IA</h2>
               <p className="mb-3.5 max-w-[281px] text-center">
                 que reduz inadimplência em até 30%
