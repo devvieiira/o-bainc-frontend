@@ -47,7 +47,7 @@ export default function Home() {
             {navLinks.map((link) => (
               <li
                 key={link.text}
-                className="hidden rounded-xl px-3 py-2 transition-all hover:bg-white hover:text-black lg:block"
+                className="hidden rounded-xl px-5 py-2 transition-all hover:bg-white hover:text-black lg:block"
               >
                 <a href={link.href} className="">
                   {link.text}
