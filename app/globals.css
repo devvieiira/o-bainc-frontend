@@ -250,6 +250,15 @@ body {
     var(--color-o-bainc-light) 75%,
     var(--color-space-dark) 100%
   );
+
+  --background-image-footer-gradient: linear-gradient(
+    to bottom,
+    rgba(8, 11, 54, 1) 0%,
+    rgba(8, 11, 54, 0.85) 17%,
+    #a7b3d1 85%,
+    #d1d8e8 100%
+  );
+
   --background-image-card-mo: url(../public/background-card-mobile.svg);
   --background-image-card-desk: url(../public/background-card-desktop.svg);
 

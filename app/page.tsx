@@ -620,35 +620,52 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="w-full bg-o-bainc-gradient">
-        <div className="w-full p-5 xl:py-10 ">
-          <Separator className="bg-space-mid" />
+      <div className="w-full bg-footer-gradient  relative z-20">
+        <Image
+          src={'/footer-mobile.png'}
+          alt="semi esfera footer"
+          width={615}
+          height={1312}
+          className="w-full h-auto absolute md:hidden bottom-0 z-0"
+        />
 
-          <div className="p-5 space-y-7 w-full px-4 flex flex-col items-center justify-center xl:space-y-0 xl:flex-row  xl:py-12">
-            {' '}
-            <h2 className="font-medium text-2xl w-full xl:text-4xl text-center">
-              Assine nossa Newsletter
-            </h2>
-            {/* TODO: add email to newslatter list ( needded to verify with o-bainc admin) */}
-            <form className="w-full space-y-3 flex flex-col items-center justify-center md:flex-row md:space-y-0 md:space-x-3">
-              <input
-                className="w-full border border-space-mid px-6 py-3 rounded-xl"
-                required
-                type="email"
-                alt="email"
-                placeholder="Seu E-mail"
-              />
-              <button
-                type="submit"
-                className="w-full md:w-1/3  px-6 py-3 rounded-xl bg-space-mid"
-              >
-                Inscreva-se
-              </button>
-            </form>
+        <Image
+          src={'/footer-desktop.png'}
+          alt="semi esfera footer"
+          width={615}
+          height={1312}
+          className="w-full h-auto absolute md:block hidden bottom-0 z-0"
+        />
+        <div className="w-full p-5 space-y-7">
+          <div className="w-full relative z-10 xl:py-10 ">
+            <Separator className="bg-space-mid" />
+
+            <div className="p-5 space-y-7 w-full px-4 flex flex-col items-center justify-center xl:space-y-0 xl:flex-row  xl:py-12">
+              {' '}
+              <h2 className="font-medium text-2xl w-full xl:text-4xl text-center">
+                Assine nossa Newsletter
+              </h2>
+              {/* TODO: add email to newslatter list ( needded to verify with o-bainc admin) */}
+              <form className="w-full space-y-3 flex flex-col items-center justify-center md:flex-row md:space-y-0 md:space-x-3">
+                <input
+                  className="w-full border border-space-mid px-6 py-3 rounded-xl"
+                  required
+                  type="email"
+                  alt="email"
+                  placeholder="Seu E-mail"
+                />
+                <button
+                  type="submit"
+                  className="w-full md:w-1/3  px-6 py-3 rounded-xl bg-space-mid"
+                >
+                  Inscreva-se
+                </button>
+              </form>
+            </div>
+            <Separator className="bg-space-mid" />
           </div>
-          <Separator className="bg-space-mid" />
+          <Footer />
         </div>
-        <Footer />
       </div>
     </main>
   );
