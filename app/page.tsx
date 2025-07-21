@@ -134,7 +134,7 @@ export default function Home() {
           </section>
         </div>
 
-        <section className="flex w-full items-end justify-end px-3.5 pb-10 pt-24 xl:mt-5 xl:px-15">
+        <section className="flex w-full items-end justify-end px-3.5 pb-10 pt-24   xl:mt-5 xl:px-15">
           <div className="flex w-full items-center justify-end xl:mx-40">
             <p className="mb-3.5 ml-24 max-w-[630px] md:text-justify md:mr-4 md:ml-2">
               A O-Bainc® combina inteligência artificial, identidade digital e
