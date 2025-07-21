@@ -25,7 +25,7 @@ export default function Home() {
   ];
   return (
     <main className="flex min-h-screen w-full flex-col items-center">
-      <header className="fixed top-0 right-0 left-0 z-50 flex w-full items-center justify-between p-10">
+      <header className="fixed top-0 right-0 left-0 z-50 flex w-full items-center justify-between p-[38px]">
         <div className="glass flex h-[57px] md:h-16 max-w-[260px] items-center justify-center rounded-2xl px-7 py-3.5">
           <Image
             className="hidden md:flex"
