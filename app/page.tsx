@@ -43,7 +43,7 @@ export default function Home() {
           />
         </div>
         <div className="glass flex h-[54px] w-14 items-center justify-center rounded-2xl border-white/20 bg-white/10 p-2 md:h-16 md:w-fit lg:w-fit">
-          <ul className="flex h-full w-full items-center justify-center gap-x-8 px-4 font-bold">
+          <ul className="flex h-full w-full items-center justify-center gap-x-8 px-4 font-medium">
             {navLinks.map((link) => (
               <li
                 key={link.text}
@@ -122,7 +122,7 @@ export default function Home() {
               />
             </div>
 
-            <div className="absolute bottom-0 z-10 space-y-6 px-16 py-16 text-white">
+            <div className="absolute bottom-0 z-10 space-y-6 px-10 md:px-16 py-16 text-white">
               <h1 className="max-w-11/12 text-2xl leading-tight font-semibold md:max-w-3/5 mx-auto md:text-[34px]">
                 Quebrando Barreiras com Inteligência: O Futuro do Crédito Começa
                 Aqui
@@ -134,9 +134,9 @@ export default function Home() {
           </section>
         </div>
 
-        <section className="flex w-full items-end justify-end px-3.5 py-10 xl:mt-5 xl:px-15">
+        <section className="flex w-full items-end justify-end px-3.5 pb-10 pt-24 xl:mt-5 xl:px-15">
           <div className="flex w-full items-center justify-end xl:mx-40">
-            <p className="mb-3.5 ml-14 max-w-[630px] text-justify md:mr-4 md:ml-2">
+            <p className="mb-3.5 ml-24 max-w-[630px] md:text-justify md:mr-4 md:ml-2">
               A O-Bainc® combina inteligência artificial, identidade digital e
               avaliação de risco em tempo real para transformar o acesso ao
               crédito em mercados invisíveis, com segurança, inclusão e ética.
