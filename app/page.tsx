@@ -26,7 +26,7 @@ export default function Home() {
   return (
     <main className="flex min-h-screen w-full flex-col items-center">
       <header className="fixed top-0 right-0 left-0 z-50 flex w-full items-center justify-between p-10">
-        <div className="glass flex h-[59px] md:h-16 max-w-[260px] items-center justify-center rounded-2xl px-7 py-3.5">
+        <div className="glass flex h-[57px] md:h-16 max-w-[260px] items-center justify-center rounded-2xl px-7 py-3.5">
           <Image
             className="hidden md:flex"
             src={'/logo.svg'}
@@ -42,7 +42,7 @@ export default function Home() {
             height={40}
           />
         </div>
-        <div className="glass flex h-14 w-14 items-center justify-center rounded-2xl border-white/20 bg-white/10 p-2 md:h-16 md:w-fit lg:w-fit">
+        <div className="glass flex h-[54px] w-14 items-center justify-center rounded-2xl border-white/20 bg-white/10 p-2 md:h-16 md:w-fit lg:w-fit">
           <ul className="flex h-full w-full items-center justify-center gap-x-8 px-4 font-bold">
             {navLinks.map((link) => (
               <li
