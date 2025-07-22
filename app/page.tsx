@@ -647,9 +647,9 @@ export default function Home() {
           <div className="w-full relative px-4 md:px-[60px] z-10 xl:pb-24">
             <Separator className="bg-space-mid" />
 
-            <div className="p-5 space-y-7 w-full flex flex-col items-center justify-center xl:space-y-0 xl:flex-row  xl:py-12">
+            <div className="md:p-5 py-5 md:py-0 space-y-7 w-full flex flex-col items-center justify-center xl:space-y-0 xl:flex-row  xl:py-12">
               {' '}
-              <h2 className="font-medium text-2xl w-full xl:text-4xl text-left">
+              <h2 className="font-medium text-2xl w-full xl:text-4xl md:text-left text-center">
                 Assine nossa Newsletter
               </h2>
               {/* TODO: add email to newslatter list ( needded to verify with o-bainc admin) */}
