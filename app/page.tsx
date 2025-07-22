@@ -24,7 +24,7 @@ export default function Home() {
     { href: '#', text: 'Contato' },
   ];
   return (
-    <main className="flex min-h-screen w-full flex-col items-center">
+    <main className="flex min-h-screen w-full flex-col items-center background-gradient">
       <header className="fixed top-0 right-0 left-0 z-50 flex w-full items-center justify-between p-[38px]">
         <div className="glass flex h-[57px] md:h-14 max-w-[220px] items-center justify-center rounded-2xl px-7 py-3.5">
           <Image
@@ -47,7 +47,7 @@ export default function Home() {
             {navLinks.map((link) => (
               <li
                 key={link.text}
-                className="hidden rounded-xl px-5 py-2 transition-all hover:bg-white hover:text-black lg:block"
+                className="hidden rounded-xl px-3 py-2 transition-all hover:bg-white hover:text-black lg:block"
               >
                 <a href={link.href} className="">
                   {link.text}
@@ -298,7 +298,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="bg-o-bainc-gradient w-full">
+        <div className="w-full">
           <section className="relative flex flex-col items-center pt-44">
             <Image
               src={'/lateral.png'}
@@ -627,7 +627,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="w-full bg-footer-gradient  relative z-20">
+      <div className="w-full relative z-20">
         <Image
           src={'/footer-mobile.png'}
           alt="semi esfera footer"

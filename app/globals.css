@@ -244,12 +244,24 @@ body {
     rgba(8, 11, 54, 1) 100%
   );
   --background-image-o-bainc-gradient: linear-gradient(
-    to bottom,
-    var(--color-space-dark) 0%,
-    var(--color-o-bainc-mid) 10%,
-    var(--color-o-bainc-light) 75%,
-    var(--color-space-dark) 100%
-  );
+    180deg,
+    #080B36 0%,
+    #080B36 28%,
+    rgba(8, 11, 54, 0.85) 35%,
+    #A7B3D1 42%,
+    #D1D8EB 49%,
+    #D1D8EB 58%,
+    #D1D8EB 70%,
+    #A7B3D1 72%,
+    rgba(8, 11, 54, 0.7) 75%,
+    rgba(8, 11, 54, 0.86) 78%,
+    #080B36 83%,
+    #080B36 92%,
+    rgba(8, 11, 54, 0.85) 93%,
+    #A7B3D1 99%,
+    #D1D8EB 100%
+  ),
+  #ffffff;
 
   --background-image-footer-gradient: linear-gradient(
     to bottom,
@@ -283,6 +295,26 @@ body {
   position: relative;
   overflow: hidden;
   z-index: 1;
+}
+
+.background-gradient {
+  background: linear-gradient(180deg,
+      #080B36 0%,
+      #080B36 28%,
+      rgba(8, 11, 54, 0.85) 35%,
+      #A7B3D1 42%,
+      #D1D8EB 49%,
+      #D1D8EB 58%,
+      #D1D8EB 70%,
+      #A7B3D1 72%,
+      rgba(8, 11, 54, 0.7) 75%,
+      rgba(8, 11, 54, 0.86) 78%,
+      #080B36 83%,
+      #080B36 92%,
+      rgba(8, 11, 54, 0.85) 93%,
+      #A7B3D1 99%,
+      #D1D8EB 100%),
+    #ffffff;
 }
 
 .gradient-border {
