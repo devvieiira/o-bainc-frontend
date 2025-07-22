@@ -215,6 +215,7 @@ body {
   --color-space-light: #d1d8eb;
   --color-space-dark-muted: #21234a;
   --color-glass-bg: #292a4126;
+  --color-dark-glass-bg: #292A4180;
   --container-8xl: 87.5rem;
   --background-image-button-green: linear-gradient(
     340deg,
@@ -289,6 +290,11 @@ body {
 @utility glass {
   background-color: rgb(from var(--color-glass-bg) r g b / 0.15);
   backdrop-filter: blur(8px);
+}
+
+@utility dark-glass {
+  background-color: var(--color-dark-glass-bg);
+  backdrop-filter: blur(32px);
 }
 
 .btn-gradient-hover {
