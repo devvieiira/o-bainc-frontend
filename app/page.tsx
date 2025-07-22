@@ -596,7 +596,7 @@ export default function Home() {
         </div>
 
         <div className="p-4 mb-9 h-auto w-full ">
-          <section className="md:min-h-[615px] xl:min-h-[810px] h-fit flex items-center justify-center w-full rounded-3xl bg-[url(../public/call_investor.png)] py-10 px-5 md:p-10 xl:p-15 bg-cover bg-center p-5">
+          <section className="md:min-h-[615px] xl:min-h-[95vh] h-fit flex items-center justify-center w-full rounded-3xl bg-[url(../public/call_investor.png)] py-10 px-5 md:p-10 xl:p-15 bg-cover bg-center p-5">
             <div className="flex flex-col items-center justify-center space-y-10 rounded-2xl text-center backdrop-blur-2xl py-10 px-5 md:p-10 xl:p-15 md:max-w-3xl">
               <h2 className="text-center text-2xl font-medium">
                 Vamos juntos construir um novo sistema financeiro?
