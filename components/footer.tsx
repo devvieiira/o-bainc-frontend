@@ -87,7 +87,7 @@ const Footer = () => {
 
         <div className="space-y-5 xl:space-y-2 w-full flex flex-col">
           <Separator className="bg-space-mid" />
-          <div className="w-full xl:flex xl:items-start xl:justify-end pt-3 md:pt-10">
+          <div className="w-full xl:flex xl:items-start xl:justify-end pt-3 md:pt-7">
             <div className="text-space-mid w-full space-y-4">
               <ul className="flex items-center space-x-6 xl:justify-self-start justify-center text-center">
                 <li className="hover:text-white">
@@ -99,7 +99,7 @@ const Footer = () => {
               </ul>
             </div>
             <div className="w-full flex text-space-mid pt-3 md:pt-0 items-center xl:justify-end justify-center text-center">
-              <p className="mb-[14px] max-w-4/5">
+              <p className="max-w-4/5">
                 O-Bainc © 2025 – Todos os direitos reservados
               </p>
             </div>

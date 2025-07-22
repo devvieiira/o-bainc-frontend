@@ -643,8 +643,8 @@ export default function Home() {
           height={1312}
           className="w-full h-auto absolute md:block hidden bottom-0 z-0"
         />
-        <div className="w-full p-5   space-y-7">
-          <div className="w-full relative px-4 md:px-[60px] z-10 xl:pb-44">
+        <div className="w-full space-y-7">
+          <div className="w-full relative px-4 md:px-[60px] z-10 xl:pb-24">
             <Separator className="bg-space-mid" />
 
             <div className="p-5 space-y-7 w-full flex flex-col items-center justify-center xl:space-y-0 xl:flex-row  xl:py-12">
