@@ -152,27 +152,27 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section className="flex justify-center px-[15px]">
+        <section className="flex justify-center">
           <div className="grid grid-cols-1 py-8 md:grid-cols-2 lg:grid-cols-4">
-            <div className="space-y-2 border-b border-[#7E86B0] pr-10 pb-4 pl-10 md:mb-8 md:border-b-0 lg:mb-0 lg:pl-0">
+            <div className="space-y-2 border-b border-[#7E86B0] pr-10 py-10 pl-10 md:mb-8 md:border-b-0 lg:mb-0 lg:pl-0">
               <h2 className="max-w-[281px] text-center text-6xl">±4</h2>
               <p className="mb-3.5 max-w-[281px] text-center">
                 bilhões de pessoas no mundo são invisíveis ao crédito
               </p>
             </div>
-            <div className="space-y-2 border-b border-[#7E86B0] pt-8 pr-10 pb-4 pl-10 md:mb-8 md:border-b-0 md:border-l md:border-[#7E86B0] md:pt-0 md:pb-0 lg:mb-0">
+            <div className="space-y-2 border-b border-[#7E86B0] pr-10 py-10 pl-10 md:mb-8 md:border-b-0 md:border-l md:border-[#7E86B0] md:py-0 lg:mb-0">
               <h2 className="max-w-[281px] text-center text-6xl">+65</h2>
               <p className="mb-3.5 max-w-[281px] text-center">
                 milhões de brasileiros invísiveis ao crédito
               </p>
             </div>
-            <div className="space-y-2 border-b border-[#7E86B0] pt-8 pr-10 pb-4 pl-10 md:mt-6 md:border-b-0 md:pt-0 md:pb-0 lg:mt-0 lg:border-l lg:border-[#7E86B0]">
+            <div className="space-y-2 border-b border-[#7E86B0] pr-10 py-10 pl-10 md:mt-6 md:border-b-0 md:py-0 lg:mt-0 lg:border-l lg:border-[#7E86B0]">
               <h2 className="max-w-[281px] text-center text-6xl">+300</h2>
               <p className="mb-3.5 max-w-[281px] text-center">
                 milhões de latino-americanos carentes de serviço financeiros
               </p>
             </div>
-            <div className="space-y-2 pt-8 pl-10 pr-10 md:mt-6 md:border-l md:border-[#7E86B0] md:pt-0 lg:mt-0">
+            <div className="space-y-2 py-10 pl-10 pr-10 md:mt-6 md:border-l md:border-[#7E86B0] md:py-0 lg:mt-0">
               <h2 className="max-w-[281px] text-center text-6xl">IA</h2>
               <p className="mb-3.5 max-w-[281px] text-center">
                 que reduz inadimplência em até 30%
@@ -480,7 +480,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="mt-16 flex w-full flex-col items-center justify-center space-y-5 px-4 text-center text-black">
+          <div className="mt-16 flex w-full flex-col items-center justify-center space-y-5 md:px-4 text-center text-black">
             <div className="mb-4 max-w-sm text-center text-2xl font-medium md:max-w-2xl">
               <h2 className="">Soluções O-Bainc®</h2>
               <p className="">Inovação que reconfigura o acesso ao crédito</p>
@@ -569,24 +569,24 @@ export default function Home() {
                 crédito, fomentamos crescimento econômico, geração de empregos e
                 bem-estar financeiro em comunidades negligenciadas.
               </p>
-              <div className="grid grid-cols-1 md:grid-cols-2 md:gap-x-8 md:gap-y-12 xl:grid-cols-3 xl:gap-x-12">
-                <div className="flex flex-col items-center justify-center space-y-3 text-center">
-                  <h3 className="text-6xl">+1,5</h3>
-                  <p className="max-w-xs">
+              <div className="w-full px-3 grid grid-cols-1 md:grid-cols-2 md:gap-x-8 md:gap-y-12 xl:grid-cols-3 xl:gap-x-12">
+                <div className="flex flex-col items-center py-10 justify-center space-y-3 text-center">
+                  <h3 className="text-[64px]">+1,5</h3>
+                  <p className="max-w-xs text-[18px]">
                     milhões de pequenas empresas podem ser criadas no Brasil
                   </p>
                 </div>
 
                 <div className="border-space-mid my-5 flex flex-col items-center space-y-3 border-y py-10 text-center md:my-0 md:border-y-0 md:border-l md:py-0 md:pl-8 md:text-left xl:items-center xl:border-x xl:px-8 xl:text-center">
-                  <h3 className="text-6xl">+4%</h3>
-                  <p className="max-w-xs">
+                  <h3 className="text-[64px]">+4%</h3>
+                  <p className="max-w-xs text-[18px]">
                     acesso ao crédito pode adicionar +4% ao PIB em 5 anos
                   </p>
                 </div>
 
-                <div className="flex flex-col items-center justify-center space-y-3 text-center md:col-span-2 xl:col-span-1">
-                  <h3 className="text-6xl">100M</h3>
-                  <p className="max-w-xs">
+                <div className="flex flex-col pt-10 items-center justify-center space-y-3 text-center md:col-span-2 xl:col-span-1">
+                  <h3 className="text-[64px]">100M</h3>
+                  <p className="max-w-xs text-[18px]">
                     empregos gerados a cada 1% de expansão do crédito
                   </p>
                 </div>
@@ -596,27 +596,27 @@ export default function Home() {
         </div>
 
         <div className="p-4 mb-9 h-auto w-full ">
-          <section className="md:min-h-[615px] xl:min-h-[95vh] h-fit flex items-center justify-center w-full rounded-3xl bg-[url(../public/call_investor.png)] py-10 px-5 md:p-10 xl:p-15 bg-cover bg-center p-5">
-            <div className="flex flex-col items-center justify-center space-y-10 rounded-2xl text-center backdrop-blur-2xl py-10 px-5 md:p-10 xl:p-15 md:max-w-3xl">
-              <h2 className="text-center text-2xl font-medium">
+          <section className="md:min-h-[615px] xl:min-h-[95vh] h-fit flex items-center justify-center w-full rounded-3xl bg-[url(../public/call_investor.png)] py-5 md:py-10 px-5 md:p-10 xl:p-15 bg-cover bg-center p-5">
+            <div className="flex flex-col items-center justify-center space-y-10 rounded-4xl text-center backdrop-blur-2xl py-10 px-5 md:p-10 xl:p-15 md:max-w-4/5">
+              <h2 className="text-center md:text-[32px] text-[25px] md:max-w-1/2 font-medium">
                 Vamos juntos construir um novo sistema financeiro?
               </h2>
-              <span className="text-center text-[16px] leading-5 font-normal">
+              <span className="text-center text-[16px] md:max-w-[60%] leading-5 font-normal">
                 Se você é um credor, investidor, regulador ou simplesmente
                 alguém que acredita na inclusão como motor de transformação,
                 junte-se à O-Bainc®. Estamos prontos para abrir caminhos,
                 gerar oportunidades e transformar vidas.
               </span>
-              <div className="h-full w-full space-y-5">
+              <div className="h-full w-full md:flex justify-center items-center space-y-5 md:space-x-5 md:space-y-0">
                 <Button
                   size={'lg'}
-                  className="w-full rounded-[12px] px-8 py-6.5 text-lg"
+                  className="rounded-[12px] w-[296px] px-8 py-6.5 text-lg"
                 >
                   Solicite uma demonstração
                 </Button>
                 <Button
                   size={'lg'}
-                  className="w-full rounded-[12px] px-8 text-lg"
+                  className="rounded-[12px] w-[296px] px-8 py-6.5 text-lg"
                   variant={'green'}
                 >
                   Entre em contato
