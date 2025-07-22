@@ -4,7 +4,7 @@ import { Separator } from './ui/separator';
 
 const Footer = () => {
   return (
-    <footer className="w-full md:px-5 px-[15px] z-10 ">
+    <footer className="w-full pb-5 md:px-5 px-[15px] z-10 ">
       <div className="z-10 flex flex-col items-center xl:px-10 pb-10 justify-center px-5 dark-glass w-full rounded-4xl overflow-clip antialiased">
         <div className="xl:grid xl:grid-cols-5 py-10 w-full">
           <div className="pb-10 flex flex-col xl:col-span-2 xl:items-center xl:justify-self-start">
