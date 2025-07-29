@@ -152,29 +152,29 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section className="flex justify-center">
+        <section className="w-full px-[15px]">
           <div className="grid grid-cols-1 py-8 md:grid-cols-2 lg:grid-cols-4">
-            <div className="space-y-2 border-b border-[#7E86B0] pr-10 py-10 pl-10 md:mb-8 md:border-b-0 lg:mb-0 lg:pl-0">
-              <h2 className="max-w-[281px] text-center text-6xl">±4</h2>
-              <p className="mb-3.5 max-w-[281px] text-center">
+            <div className="flex flex-col pt-10 pb-10 xl:pt-0 xl:pb-0 items-center justify-center space-y-3 text-center md:col-span-2 xl:col-span-1 border-[#7E86B0] border-b lg:border-b-0">
+              <h2 className="max-w-[281px] text-center text-[64px] font-medium">±4</h2>
+              <p className="mb-3.5 text-lg max-w-[281px] text-center">
                 bilhões de pessoas no mundo são invisíveis ao crédito
               </p>
             </div>
-            <div className="space-y-2 border-b border-[#7E86B0] pr-10 py-10 pl-10 md:mb-8 md:border-b-0 md:border-l md:border-[#7E86B0] md:py-0 lg:mb-0">
-              <h2 className="max-w-[281px] text-center text-6xl">+65</h2>
-              <p className="mb-3.5 max-w-[281px] text-center">
+            <div className="flex flex-col pt-10 pb-10 xl:pt-0 xl:pb-0 items-center justify-center space-y-3 text-center md:col-span-2 xl:col-span-1 border-[#7E86B0] border-b lg:border-b-0 lg:border-l">
+              <h2 className="max-w-[281px] text-center text-[64px] font-medium">+65</h2>
+              <p className="mb-3.5 text-lg max-w-[281px] text-center">
                 milhões de brasileiros invísiveis ao crédito
               </p>
             </div>
-            <div className="space-y-2 border-b border-[#7E86B0] pr-10 py-10 pl-10 md:mt-6 md:border-b-0 md:py-0 lg:mt-0 lg:border-l lg:border-[#7E86B0]">
-              <h2 className="max-w-[281px] text-center text-6xl">+300</h2>
-              <p className="mb-3.5 max-w-[281px] text-center">
+            <div className="flex flex-col pt-10 pb-10 xl:pt-0 xl:pb-0 items-center justify-center space-y-3 text-center md:col-span-2 xl:col-span-1 border-[#7E86B0] border-b lg:border-b-0 xl:border-l">
+              <h2 className="max-w-[281px] text-center text-[64px] font-medium">+300</h2>
+              <p className="mb-3.5 text-lg max-w-[281px] text-center">
                 milhões de latino-americanos carentes de serviço financeiros
               </p>
             </div>
-            <div className="space-y-2 py-10 pl-10 pr-10 md:mt-6 md:border-l md:border-[#7E86B0] md:py-0 lg:mt-0">
-              <h2 className="max-w-[281px] text-center text-6xl">IA</h2>
-              <p className="mb-3.5 max-w-[281px] text-center">
+            <div className="flex flex-col pt-10 pb-10 xl:pt-0 xl:pb-0 items-center justify-center space-y-3 text-center md:col-span-2 xl:col-span-1 border-[#7E86B0] border-b lg:border-b-0 lg:border-l">
+              <h2 className="max-w-[281px] text-center text-[64px] font-medium">IA</h2>
+              <p className="mb-3.5 text-lg max-w-[281px] text-center">
                 que reduz inadimplência em até 30%
               </p>
             </div>
@@ -182,7 +182,7 @@ export default function Home() {
         </section>
         <div className="flex w-full flex-col items-center justify-center px-4 md:pl-0">
           <div className="flex justify-center pt-14">
-            <p className="mb-3.5 text-[32px]">O que nos diferencia</p>
+            <p className="mb-3.5 text-[25px] md:text-[32px]">O que nos diferencia</p>
           </div>
           <div className="grid grid-cols-1 gap-5 pt-2 md:grid-cols-2 lg:grid-cols-3">
             <div className="min-h mx-auto flex max-w-[736px] flex-col items-center rounded-4xl bg-[#21234A] px-5 pt-5 pb-9 md:mx-0 md:h-[498px] md:max-w-[420px] md:pb-0">
