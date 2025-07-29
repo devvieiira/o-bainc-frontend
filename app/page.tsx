@@ -304,7 +304,7 @@ export default function Home() {
               src={'/lateral.png'}
               alt="esfera lateral"
               width={800}
-              height={1700}
+              height={1764}
               className="absolute top-1/2 right-0 z-0 h-auto w-auto -translate-y-1/2 lg:h-full"
             />
             <div className="z-10 flex w-full flex-col items-center px-4">
@@ -445,6 +445,7 @@ export default function Home() {
               populações desassistidas, protegendo ao mesmo tempo os credores
               contra riscos.
             </p>
+            <div>
             <div className="bg-space-dark-muted w-full flex flex-col items-center justify-center rounded-4xl p-5 text-white lg:max-w-6xl xl:flex-row xl:space-x-15">
               <Video
                 videoPath="/home_video.mp4"
@@ -480,12 +481,13 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="mt-16 flex w-full flex-col items-center justify-center space-y-5 md:px-4 text-center text-black">
-            <div className="mb-4 max-w-sm text-center text-2xl font-medium md:max-w-2xl">
-              <h2 className="">Soluções O-Bainc®</h2>
-              <p className="">Inovação que reconfigura o acesso ao crédito</p>
             </div>
-            <span className="mb-12 font-[16px]">
+          <div className="md:mt-[100px] mt-[140px] flex w-full flex-col items-center justify-center space-y-5 md:px-4 text-center text-black">
+            <div className="mb-4 max-w-sm text-center text-2xl font-medium md:max-w-2xl">
+              <h2 className="text-[25px] md:text-[32px]">Soluções O-Bainc®</h2>
+              <p className="text-[25px] md:text-[32px]">Inovação que reconfigura o acesso ao crédito</p>
+            </div>
+            <span className="mb-[70px] font-[16px] md:w-1/2">
               As soluções da O-Bainc® atuam em toda a jornada do crédito. Da
               verificação à concessão, com monitoramento contínuo. Inteligência
               artificial, ética e soberania de dados no centro de tudo.
@@ -549,7 +551,7 @@ export default function Home() {
               </SolutionCard.Content>
             </SolutionCard>
 
-            <div className="flex w-full items-center justify-center pt-10 pb-15">
+            <div className="flex w-full items-center justify-center pt-10 pb-[110px]">
               <Button
                 className="rounded-xl px-8 py-6 text-[18px]"
                 size={'lg'}
@@ -559,7 +561,7 @@ export default function Home() {
               </Button>
             </div>
             <section className="mb-24 flex w-full flex-col items-center justify-center space-y-5 text-white">
-              <h2 className="text-2xl font-medium">
+              <h2 className="text-[25px] md:text-[32px] font-medium">
                 Impacto Social e Econômico
               </h2>
               <p className="mb-12 w-full text-center xl:max-w-2xl">
@@ -570,21 +572,21 @@ export default function Home() {
                 bem-estar financeiro em comunidades negligenciadas.
               </p>
               <div className="w-full px-3 grid grid-cols-1 md:grid-cols-2 md:gap-x-8 md:gap-y-12 xl:grid-cols-3 xl:gap-x-12">
-                <div className="flex flex-col items-center py-10 justify-center space-y-3 text-center">
+                <div className="flex flex-col items-center py-10 justify-center xl:py-0 space-y-3 text-center">
                   <h3 className="text-[64px]">+1,5</h3>
                   <p className="max-w-xs text-[18px]">
                     milhões de pequenas empresas podem ser criadas no Brasil
                   </p>
                 </div>
 
-                <div className="border-space-mid my-5 flex flex-col items-center space-y-3 border-y py-10 text-center md:my-0 md:border-y-0 md:border-l md:py-0 md:pl-8 md:text-left xl:items-center xl:border-x xl:px-8 xl:text-center">
+                <div className="border-space-mid flex flex-col items-center space-y-3 border-y py-10 text-center md:my-0 md:border-y-0 md:border-l xl:py-0 md:pl-8 md:text-left xl:items-center xl:border-x xl:px-8 xl:text-center">
                   <h3 className="text-[64px]">+4%</h3>
                   <p className="max-w-xs text-[18px]">
                     acesso ao crédito pode adicionar +4% ao PIB em 5 anos
                   </p>
                 </div>
 
-                <div className="flex flex-col pt-10 items-center justify-center space-y-3 text-center md:col-span-2 xl:col-span-1">
+                <div className="flex flex-col pt-10 items-center justify-center space-y-3 xl:py-0 text-center md:col-span-2 xl:col-span-1">
                   <h3 className="text-[64px]">100M</h3>
                   <p className="max-w-xs text-[18px]">
                     empregos gerados a cada 1% de expansão do crédito
