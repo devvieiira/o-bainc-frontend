@@ -153,7 +153,7 @@ export default function Home() {
           </div>
         </section>
         <section className="w-full px-[15px]">
-          <div className="grid grid-cols-1 py-8 md:grid-cols-2 lg:grid-cols-4">
+          <div className="grid grid-cols-1 py-[40px] md:grid-cols-2 lg:grid-cols-4">
             <div className="flex flex-col pt-10 pb-10 xl:pt-0 xl:pb-0 items-center justify-center space-y-3 text-center md:col-span-2 xl:col-span-1 border-[#7E86B0] border-b lg:border-b-0">
               <h2 className="max-w-[281px] text-center text-[64px] font-medium">±4</h2>
               <p className="mb-3.5 text-lg max-w-[281px] text-center">
@@ -181,7 +181,7 @@ export default function Home() {
           </div>
         </section>
         <div className="flex w-full flex-col items-center justify-center px-4 md:pl-0">
-          <div className="flex justify-center pt-14">
+          <div className="flex justify-center pt-20">
             <p className="mb-3.5 text-[25px] md:text-[32px]">O que nos diferencia</p>
           </div>
           <div className="grid grid-cols-1 gap-5 pt-2 md:grid-cols-2 lg:grid-cols-3">
@@ -263,43 +263,43 @@ export default function Home() {
             </div>
           </div>
           <div className="flex w-full flex-col items-center pt-14">
-            <h2 className="pb-6 text-center text-[32px]">Conformidade total</h2>
+            <h2 className="pb-6 text-center text-[25px] md:text-[32px]">Conformidade total</h2>
             <div className="grid space-y-5 md:grid-cols-3 md:space-y-0 md:space-x-5">
-              <div className="flex max-w-[737px] items-center justify-start space-x-4 rounded-2xl bg-[#21234A] p-2 md:max-w-[420px] md:justify-center">
+              <div className="flex max-w-[737px] items-center justify-start space-x-4 rounded-2xl bg-[#21234A] p-[10px] md:max-w-[420px] md:justify-center">
                 <Image
                   src={'/icon.svg'}
                   alt="Ícone"
                   width={55}
                   height={55}
-                  className="rounded-2xl"
+                  className="rounded-xl"
                 />
                 <p>LGPD - Lei Geral de Proteção de Dados Pessoais</p>
               </div>
-              <div className="flex max-w-[737px] items-center justify-start space-x-4 rounded-2xl bg-[#21234A] p-2 md:max-w-[420px] md:justify-center">
+              <div className="flex max-w-[737px] items-center justify-start space-x-4 rounded-2xl bg-[#21234A] p-[10px] md:max-w-[420px] md:justify-center">
                 <Image
                   src={'/icon.svg'}
                   alt="Ícone"
                   width={55}
                   height={55}
-                  className="rounded-2xl"
+                  className="rounded-xl"
                 />
                 <p>GDPR - Regulamento Geral sobre a Proteção de Dados</p>
               </div>
-              <div className="flex max-w-[737px] items-center justify-start space-x-4 rounded-2xl bg-[#21234A] p-2 md:max-w-[420px] md:justify-center">
+              <div className="flex max-w-[737px] items-center justify-start space-x-4 rounded-2xl bg-[#21234A] p-[10px] md:max-w-[420px] md:justify-center">
                 <Image
                   src={'/icon.svg'}
                   alt="Ícone"
                   width={55}
                   height={55}
-                  className="rounded-2xl"
+                  className="rounded-xl"
                 />
-                <p>AML - Combate à Lavagem de Dinheiro</p>
+                <p className='w-[333px]'>AML - Combate à Lavagem de Dinheiro</p>
               </div>
             </div>
           </div>
         </div>
         <div className="w-full">
-          <section className="relative flex flex-col items-center pt-44">
+          <section className="relative flex flex-col items-center pt-[100px] md:pt-[150px]">
             <Image
               src={'/lateral.png'}
               alt="esfera lateral"
@@ -308,7 +308,7 @@ export default function Home() {
               className="absolute top-1/2 right-0 z-0 h-auto w-auto -translate-y-1/2 lg:h-full"
             />
             <div className="z-10 flex w-full flex-col items-center px-4">
-              <h2 className="mb-3.5 text-center text-[32px]">
+              <h2 className="mb-3.5 text-center text-[25px] md:text-[32px]">
                 Tecnologia própria, impacto real
               </h2>
               <div className="flex max-w-[686px] justify-center pt-2">
