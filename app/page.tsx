@@ -329,7 +329,7 @@ export default function Home() {
                   width={140}
                   height={140}
                 />
-                <div className="flex flex-col items-start p-5">
+                <div className="flex flex-col items-start py-5 px-[10px]">
                   <h3 className="mb-3.5 text-[20px]">
                     Identidade Digital Soberana
                   </h3>
@@ -348,7 +348,7 @@ export default function Home() {
                   width={140}
                   height={140}
                 />
-                <div className="flex flex-col items-start p-5">
+                <div className="flex flex-col items-start py-5 px-[10px]x">
                   <h3 className="mb-3.5 text-[20px]">
                     Mecanismo de Decisão de Crédito com IA
                   </h3>
@@ -367,7 +367,7 @@ export default function Home() {
                   width={140}
                   height={140}
                 />
-                <div className="flex flex-col items-start p-5">
+                <div className="flex flex-col items-start py-5 px-[10px]">
                   <h3 className="mb-3.5 text-[20px]">
                     Plataforma Integrada de Gestão de Crédito
                   </h3>
@@ -385,7 +385,7 @@ export default function Home() {
                   width={140}
                   height={140}
                 />
-                <div className="flex flex-col items-start p-5">
+                <div className="flex flex-col items-start py-5 px-[10px]">
                   <h3 className="mb-3.5 text-[20px]">
                     Análise de Risco de Portfólio e Inadimplência
                   </h3>
@@ -403,7 +403,7 @@ export default function Home() {
                   width={140}
                   height={140}
                 />
-                <div className="flex flex-col items-start p-5">
+                <div className="flex flex-col items-start py-5 px-[10px]">
                   <h3 className="mb-3.5 text-[20px]">
                     Identidade de Crédito Autogerida
                   </h3>
@@ -422,7 +422,7 @@ export default function Home() {
                   width={140}
                   height={140}
                 />
-                <div className="flex flex-col items-start p-5">
+                <div className="flex flex-col items-start py-5 px-[10px]">
                   <h3 className="mb-3.5 text-[20px]">
                     Open Bank Digital Currency
                   </h3>
@@ -436,8 +436,8 @@ export default function Home() {
             </div>
           </section>
 
-          <div className="flex w-full flex-col items-center justify-center space-y-5 px-4 pt-15 text-center text-black">
-            <h2 className="text-center text-2xl font-medium">
+          <div className="flex w-full flex-col items-center justify-center space-y-5 px-[60px] pt-[120px] md:pt-[200px] text-center text-black">
+            <h2 className="text-center text-[25px] md:text-[32px] font-medium md:w-1/2">
               Cŕedito Impulsionado por Computação Quântica para Todos
             </h2>
             <p className="mb-13 max-w-2xl">
@@ -445,7 +445,7 @@ export default function Home() {
               populações desassistidas, protegendo ao mesmo tempo os credores
               contra riscos.
             </p>
-            <div className="bg-space-dark-muted flex flex-col items-center justify-center rounded-4xl p-5 text-white lg:max-w-6xl xl:flex-row xl:space-x-15">
+            <div className="bg-space-dark-muted w-full flex flex-col items-center justify-center rounded-4xl p-5 text-white lg:max-w-6xl xl:flex-row xl:space-x-15">
               <Video
                 videoPath="/home_video.mp4"
                 h={355}

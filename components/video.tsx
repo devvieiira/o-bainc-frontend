@@ -20,7 +20,7 @@ export function Video({
       controls
       preload="none"
       loop
-      className={`aspect-square rounded-4xl object-cover ${className}`}
+      className={`aspect-square rounded-2xl object-cover ${className}`}
     >
       <source src={videoPath} type="video/mp4" />
     </video>
