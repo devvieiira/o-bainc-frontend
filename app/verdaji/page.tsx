@@ -14,7 +14,7 @@ export default function Verdaji() {
         { href: '#', text: 'Contato' },
       ];
     return (
-        <main className="flex min-h-screen w-full flex-col items-center bg-o-bainc-mid">
+        <main className="flex min-h-screen w-full flex-col items-center">
             <header className="fixed top-0 right-0 left-0 z-50 flex w-full items-center justify-between p-[38px]">
                 <div className="glass flex h-[57px] md:h-14 max-w-[220px] items-center justify-center rounded-2xl px-7 py-3.5">
                     <Image
@@ -93,6 +93,36 @@ export default function Verdaji() {
                 <div className="px-4">
                     <div className="relative flex h-[52vh] w-full flex-col items-center justify-center overflow-hidden rounded-4xl rounded-t-4xl bg-white bg-[linear-gradient(305deg,_#ECF8F7_0%,_rgba(16,21,105,0.7)_50%,_rgba(8,11,54,1)_100%)] text-center lg:h-[52vh] lg:rounded-4xl">
                         <h2 className="text-[32px] font-medium mx-auto">Verdaji® – Identidade financeira com propósito</h2>
+                    </div>
+                </div>
+            </section>
+
+            <section className="px-[60px] w-full relative min-h-screen flex items-center">
+                <Image
+                    src={'/CELLPHONE-WALLPAPER.webp'}
+                    alt="Abstração gráfica de ondas de luz"
+                    className="absolute inset-0 object-cover mx-auto"
+                    width={800}
+                    height={909}
+                    />
+                <div className="w-full flex justify-around relative z-10 space-x-[300px] items-center">
+                    <div className="max-w-[420px] space-y-[1px]">
+                        <h3 className="text-[32px] font-medium mb-[14px]">O que é a Verdaji®?</h3>
+                        <p className="mb-[14px] text-[16px]">O Verdaji® é o aplicativo de identidade de crédito desenvolvido pela O-Bainc® para garantir que ninguém fique fora do sistema financeiro por falta de histórico formal.
+                            Nele, o usuário cria sua identidade de crédito digital soberana (CRIP-D®), protegida por criptografia quântica, que constrói o histórico financeiro de quem foi ignorado pelas instituições tradicionais de crédito, com base em dados alternativos, tais como:
+                            </p>
+                        <h4 className="font-medium"><span className="pr-[14px] pl-[20px]">•	</span>Pagamentos via celular (Pix, recargas, etc.)</h4>
+                        <h4 className="font-medium"><span className="pr-[14px] pl-[20px]">•	</span>Histórico de trabalho informal</h4>
+                        <h4 className="font-medium"><span className="pr-[14px] pl-[20px]">•	</span>Contas de serviços públicos (água, luz, gás)</h4>
+                        <h4 className="font-medium"><span className="pr-[14px] pl-[20px]">•	</span>Comportamentos financeiros digitais</h4>
+                    </div>
+                    <div>
+                        <h3 className="text-[32px] font-medium mb-[14px]">Benefícios:</h3>
+                        <h4 className="font-medium"><span className="pr-[14px] pl-[20px]">•	</span>Identidade financeira 100% autogerida</h4>
+                        <h4 className="font-medium"><span className="pr-[14px] pl-[20px]">•	</span>Proteção contra fraudes com criptografia quântica</h4>
+                        <h4 className="font-medium"><span className="pr-[14px] pl-[20px]">•	</span>Permite acesso a crédito justo para quem não tem conta bancária</h4>
+                        <h4 className="font-medium"><span className="pr-[14px] pl-[20px]">•	</span>Integra-se com CRIP-D®, ADG® e Marketplace O-Bainc®</h4>
+                        <h4 className="font-medium"><span className="pr-[14px] pl-[20px]">•	</span>Compatível com regulações de LGPD, GDPR, AML</h4>
                     </div>
                 </div>
             </section>
