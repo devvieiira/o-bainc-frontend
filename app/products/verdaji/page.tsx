@@ -89,9 +89,9 @@ export default function Verdaji() {
 				</div>
 			</section>
 
-			<section className="w-full px-4 py-16 md:py-24">
-				<div className="flex flex-col xl:flex-row gap-8 items-center justify-center">
-					<div className="z-10 xl:w-1/3">
+			<section className="w-full px-4 py-16 md:py-24 mt-20">
+				<div className="grid grid-cols-1 xl:grid-cols-3 gap-8 items-center space-y-0">
+					<div className="z-10">
 						<h2 className="text-3xl font-bold mb-4">O que é a Verdaji®?</h2>
 						<p className="mb-4">
 							O Verdaji® é o aplicativo de identidade de crédito desenvolvido
@@ -110,18 +110,20 @@ export default function Verdaji() {
 						</ul>
 					</div>
 
-					<div className="flex justify-center items-center xl:mt-44 my-20 md:my-32">
-						<div className="scale-200 md:scale-[300%]  transition-transform">
+					<div className="relative h-[650px]">
+						<div className="absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 w-[600px] md:w-[800px] xl:w-[950px] pointer-events-none">
 							<Image
 								src={"/CELLPHONE-WALLPAPER.webp"}
-								alt="Verdaji App on phone"
-								width={250}
-								height={500}
+								alt={"Telefones exibindo o aplicativo Verdaji"}
+								width={985}
+								height={972}
+								quality={100}
+								priority
 							/>
 						</div>
 					</div>
 
-					<div className="w-full xl:w-1/3 md:mt-0 rounded-xl shadow-lg p-4 relative z-10">
+					<div className="w-full md:mt-0 rounded-xl shadow-lg p-4 relative z-10">
 						<h3 className="text-2xl font-bold mb-4">Benefícios:</h3>
 						<ul className="list-disc pl-5 space-y-0">
 							<li>Identidade financeira 100% autogerida</li>
